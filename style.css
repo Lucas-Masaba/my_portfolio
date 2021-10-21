@@ -7,6 +7,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
+  text-decoration: none;
 }
 
 /* positioning all the elements in the header element inline */
@@ -16,14 +17,17 @@
 }
 
 /* positioning my social media icons */
-figure {
+.icon {
   width: 160px;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   flex: none;
   order: 3;
   flex-grow: 0;
   margin: 12px 0;
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 /* positioning the whole body and placing a background color */
@@ -39,6 +43,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 114px 24px;
+  padding-bottom: 56.01px;
 }
 
 /* position the whole section and background image */
@@ -46,6 +51,7 @@ section {
   display: flex;
   flex-direction: column;
   padding: 114px 24px;
+  padding-top: 0px;
   background-image: url("./pics/background.png");
   background-repeat: no-repeat;
 }

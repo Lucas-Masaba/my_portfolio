@@ -1,0 +1,121 @@
+/*adding dimensions, color, shappe, font to My Logo*/
+.my-logo{
+  height: 16px;
+  width: 68px;
+  left: 7px;
+  color: #6070FF;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/*positioning all the elements in the header element inline*/
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*positioning my social media icons*/
+figure{
+  width: 160px;;
+  display: flex;
+  justify-content: space-between;
+}
+figure{
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+
+/*positioning the whole body and placing a background color*/
+body{
+  position: relative;
+  width: 375px;
+  height: 5410px;
+  background: #F7F7F9;
+}
+
+/*Working on header position*/
+header{
+  display: flex;
+  flex-direction: column; 
+  padding: 114px 24px;
+}
+
+/*position the whole section*/
+section{
+  display: flex;
+  flex-direction: column;
+  padding: 114px 24px;
+}
+
+/*background image*/
+section{
+  background-image: url("./pics/background.png");
+  background-repeat: no-repeat;
+}
+
+/*Positioning introduction text*/
+h1{
+  position: static;
+  width: 327px;
+  height: 150px;
+  left: 24px;
+  top: 114px;
+}
+
+/*styling introduction text*/
+h1{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #344563;
+}
+
+/*styling further intro*/
+.intro{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+/*styling the let's connect text*/
+.connect{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8CFF;
+}
+
+/*adding hover button interactions*/
+.connect:hover {
+  cursor: pointer;
+}
+.my-logo:hover{
+  cursor: pointer;
+}
+img[src*="twitter_bird.png"]:hover{
+  cursor: pointer;
+}
+img[src*="linked_in_logo.svg"]:hover{
+  cursor: pointer;
+}
+img[src*="M.svg"]:hover{
+  cursor: pointer;
+}
+img[src*="github_cat.svg"]:hover{
+  cursor: pointer;
+}
+img[src*="peace.svg"]:hover{
+  cursor: pointer;
+} 
+
+@media only screen and (max-width: 600px){}

@@ -4,7 +4,7 @@
   width: 68px;
   left: 7px;
   color: #6070ff;
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -23,7 +23,7 @@ figure {
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 /* positioning the whole body and placing a background color */
@@ -31,41 +31,33 @@ body {
   position: relative;
   width: 375px;
   height: 5410px;
-  background: #F7F7F9;
+  background: #f7f7f9;
 }
 
 /* Working on header position */
 header {
   display: flex;
-  flex-direction: column; 
-  padding: 114px 24px;
-}
-
-/* position the whole section */
-section {
-  display: flex;
   flex-direction: column;
   padding: 114px 24px;
 }
 
-/* background image */
+/* position the whole section and background image */
 section {
+  display: flex;
+  flex-direction: column;
+  padding: 114px 24px;
   background-image: url("./pics/background.png");
   background-repeat: no-repeat;
 }
 
-/* Positioning introduction text */
+/* Positioning introduction text and styling introduction text */
 h1 {
   position: static;
   width: 327px;
   height: 150px;
   left: 24px;
   top: 114px;
-}
-
-/* styling introduction text */
-h1 {
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -75,7 +67,7 @@ h1 {
 
 /* styling further intro */
 .intro {
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -85,36 +77,39 @@ h1 {
 
 /* styling the let's connect text */
 .connect {
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 /* adding hover button interactions */
-.connect:hover  {
+.connect:hover {
   cursor: pointer;
 }
+
 .my-logo:hover {
   cursor: pointer;
 }
+
 img[src*="twitter_bird.png"]:hover {
   cursor: pointer;
 }
+
 img[src*="linked_in_logo.svg"]:hover {
   cursor: pointer;
 }
+
 img[src*="M.svg"]:hover {
   cursor: pointer;
 }
+
 img[src*="github_cat.svg"]:hover {
   cursor: pointer;
 }
+
 img[src*="peace.svg"]:hover {
   cursor: pointer;
-} 
-
-@media only screen and (max-width: 600px) {
 }

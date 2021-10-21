@@ -2,7 +2,7 @@
 
 > A skeleton of a mobile version of a portfolio
 
-![screenshot](./screenshot.png)
+![screenshot](./pics/screenshot.png)
 
 
 

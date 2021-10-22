@@ -323,8 +323,7 @@ img[src*="Union.png"] {
   cursor: pointer;
 }
 
-.works,
-.about-myself {
+.works {
   position: relative;
   width: 375px;
   height: 5410px;

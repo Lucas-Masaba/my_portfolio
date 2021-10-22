@@ -151,7 +151,7 @@ img[src*="peace.svg"]:hover {
 .descreptive-heading {
   font-weight: bold;
   color: #172b4d;
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 32px;
   line-height: 44px;
@@ -159,7 +159,7 @@ img[src*="peace.svg"]:hover {
 
 /* styling canopy */
 .canopy {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -169,8 +169,7 @@ img[src*="peace.svg"]:hover {
 
 .back-end-dev {
   color: #7a869a;
-  font-weight: bold;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -180,7 +179,7 @@ img[src*="peace.svg"]:hover {
 /* styling paragraph class */
 .paragraph {
   color: #344563;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -193,9 +192,9 @@ img[src*="peace.svg"]:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   margin-right: 108px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .l-button {
@@ -206,13 +205,13 @@ img[src*="peace.svg"]:hover {
   width: 89px;
   height: 24px;
   left: 114px;
-  top: 0px;
+  top: 0;
   position: static;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 4px 12px;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;

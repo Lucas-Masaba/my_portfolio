@@ -331,3 +331,17 @@ img[src*="Union.png"] {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 550;
 }
+button:hover:enabled{
+  background-color: #ffffff !important;
+}
+button:hover:hover{
+  background-color: #6070ff !important;
+  color: #ffffff !important;
+}
+button:hover:active{
+  background-color: #2230d2 !important;
+  color: #ffffff !important;
+}
+button:hover:disabled{
+  background-color: #ffffff !important;
+}

@@ -331,17 +331,21 @@ img[src*="Union.png"] {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 550;
 }
-button:hover:enabled{
-  background-color: #ffffff !important;
+
+button:hover:enabled {
+  background-color: #fff !important;
 }
-button:hover:hover{
+
+button:hover:hover {
   background-color: #6070ff !important;
-  color: #ffffff !important;
+  color: #fff !important;
 }
-button:hover:active{
+
+button:hover:active {
   background-color: #2230d2 !important;
-  color: #ffffff !important;
+  color: #fff !important;
 }
-button:hover:disabled{
-  background-color: #ffffff !important;
+
+button:hover:disabled {
+  background-color: #fff !important;
 }

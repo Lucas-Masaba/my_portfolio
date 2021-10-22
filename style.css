@@ -124,6 +124,7 @@ img[src*="peace.svg"]:hover {
   display: grid;
   grid-template-rows: auto auto auto auto;
   row-gap: 114px;
+  background-color: #e5e5e5;
 }
 
 /* placing a border box around the cards */

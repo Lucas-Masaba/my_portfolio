@@ -279,8 +279,11 @@ img[src*="peace.svg"]:hover {
   background-color: #fff;
   border-radius: 8px;
   border: 0.5px solid #396df2;
-  font-size: 17px;
+  font-family: Poppins;
+  font-style: normal;
   font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
   padding: 10px;
 }
 

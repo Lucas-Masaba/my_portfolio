@@ -37,12 +37,12 @@ body {
   height: 5410px;
   background: #e5e5e5;
 }
+
 .works {
   position: relative;
   width: 375px;
   height: auto;
   background: #e5e5e5;
-}
 }
 
 /* Working on header position */
@@ -287,7 +287,7 @@ img[src*="peace.svg"]:hover {
   background-color: #fff;
   border-radius: 8px;
   border: 0.5px solid #396df2;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -300,6 +300,11 @@ img[src*="peace.svg"]:hover {
   justify-content: space-between;
   padding: 20px;
   padding-left: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .languages {
@@ -328,6 +333,12 @@ img[src*="peace.svg"]:hover {
   background-color: #f7f7f9;
   border-radius: 8px;
   margin: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
 }
 
 .tools {
@@ -343,6 +354,11 @@ img[src*="peace.svg"]:hover {
   border-bottom: #dfe1e6 solid 0.5px;
   padding-bottom: 24px;
   padding-top: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .fix {
@@ -371,8 +387,6 @@ img[src*="Union.png"] {
   cursor: pointer;
 }
 
-
-
 button:hover:enabled {
   background-color: #fff !important;
 }
@@ -389,4 +403,5 @@ button:hover:active {
 
 button:hover:disabled {
   background-color: #fff !important;
+}
 }

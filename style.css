@@ -17,7 +17,7 @@
 }
 
 /* positioning my social media icons */
-.icon {
+.icon-a {
   width: 160px;
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@ header {
 }
 
 /* position the whole section and background image */
-section {
+.begin {
   display: flex;
   flex-direction: column;
   padding: 114px 24px;
@@ -57,7 +57,7 @@ section {
 }
 
 /* Positioning introduction text and styling introduction text */
-h1 {
+.warm {
   position: static;
   width: 327px;
   height: 150px;
@@ -72,7 +72,7 @@ h1 {
 }
 
 /* styling further intro */
-.intro {
+.intro-a {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -82,7 +82,7 @@ h1 {
 }
 
 /* styling the let's connect text */
-.connect {
+.connect-a {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -92,7 +92,7 @@ h1 {
 }
 
 /* adding hover button interactions */
-.connect:hover {
+.connect-a:hover {
   cursor: pointer;
 }
 
@@ -118,4 +118,217 @@ img[src*="github_cat.svg"]:hover {
 
 img[src*="peace.svg"]:hover {
   cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 114px;
+}
+
+/* placing a border box around the cards */
+.card {
+  border: solid 1px #dfe1e6;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+/* position the experience-container */
+.experience-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* styling the descriptive-heading */
+.descreptive-heading {
+  font-weight: bold;
+  color: #172b4d;
+}
+
+/* styling canopy */
+.canopy {
+  font-weight: bold;
+  color: #344563;
+}
+
+.back-end-dev {
+  color: #7a869a;
+  font-weight: bold;
+}
+
+/* styling paragraph class */
+.paragraph {
+  color: #344563;
+}
+
+/* styling multiple buttons */
+.language-button {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 15% 15% 15%;
+  padding-left: 0;
+}
+
+.l-button {
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+}
+
+.l-button:hover {
+  cursor: pointer;
+}
+
+.seen-project {
+  color: #396df2;
+  display: block;
+  width: 50%;
+  padding: 20px;
+  border-radius: 8px;
+  border: 0.5px solid #396df2;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.seen-project:hover {
+  cursor: pointer;
+}
+
+.about-myself {
+  border-top-right-radius: 16%;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 114px;
+  margin-bottom: 114px;
+}
+
+.intro {
+  font-weight: bold;
+  color: #172b4d;
+  font-size: 40px;
+  padding-top: 114px;
+}
+
+.hello {
+  font-size: 16px;
+  color: #344563;
+  font-weight: normal;
+}
+
+.connect {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style-type: none;
+  padding-left: 0;
+  width: 50%;
+}
+
+.resume {
+  color: #396df2;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 0.5px solid #396df2;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 0;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.single {
+  display: flex;
+  float: left;
+}
+
+.java {
+  padding-top: 15px;
+  padding-left: 60px;
+  color: #253858;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.individual-language {
+  border: none;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.individual-tool {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #dfe1e6 solid 0.5px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.fix {
+  display: block;
+  height: 12px;
+  width: 6px;
+  left: 10px;
+  top: 6px;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+
+img[src*="Union.png"] {
+  display: block;
+  height: 12px;
+  width: 20px;
+  left: 10px;
+  top: 6px;
+}
+
+.languages:hover {
+  cursor: pointer;
+}
+
+.resume:hover {
+  cursor: pointer;
+}
+
+.works,
+.about-myself {
+  position: relative;
+  width: 375px;
+  height: 5410px;
+  background: #ebebff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
 }

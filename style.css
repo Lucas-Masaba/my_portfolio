@@ -301,10 +301,11 @@ img[src*="peace.svg"]:hover {
 .single {
   display: flex;
   float: left;
+  padding: 12px;
 }
 
 .java {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-left: 60px;
   color: #253858;
   font-weight: 500;

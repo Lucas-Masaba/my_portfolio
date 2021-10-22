@@ -15,19 +15,19 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Download 
 https://github.com/Lucas-Masaba/mobile-version-portfolio-skeleton.git
  
-or
+Follow this link to my GitHub repository. Copy the link from the code button
+ 
+After you have copied the link, enter the command below in your terminal
  
 git clone git@github.com:Lucas-Masaba/mobile-version-portfolio-skeleton
 
-
+## Remember to paste the link after the git clone command 
 
 ## Authors
 

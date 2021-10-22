@@ -1,6 +1,6 @@
-# mobile-version-portfolio-skeleton
+# mobile-version-portfolio
 
-> A skeleton of a mobile version of a portfolio
+> A mobile version of a portfolio
 
 ![screenshot](./pics/screenshot.png)
 

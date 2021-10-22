@@ -151,30 +151,51 @@ img[src*="peace.svg"]:hover {
 .descreptive-heading {
   font-weight: bold;
   color: #172b4d;
+  font-family: poppins;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 /* styling canopy */
 .canopy {
-  font-weight: bold;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
   color: #344563;
 }
 
 .back-end-dev {
   color: #7a869a;
   font-weight: bold;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 /* styling paragraph class */
 .paragraph {
   color: #344563;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 /* styling multiple buttons */
 .language-button {
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 15% 15% 15%;
-  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  margin-right: 108px;
+  margin-left: 0px;
 }
 
 .l-button {
@@ -182,7 +203,21 @@ img[src*="peace.svg"]:hover {
   background-color: #ebebff;
   border-radius: 8px;
   border: none;
-  font-weight: 700;
+  width: 89px;
+  height: 24px;
+  left: 114px;
+  top: 0px;
+  position: static;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 8px;
 }
 
 .l-button:hover {

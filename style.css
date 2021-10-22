@@ -134,6 +134,8 @@ img[src*="peace.svg"]:hover {
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 /* position the experience-container */

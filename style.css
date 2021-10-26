@@ -435,4 +435,26 @@ form{
   padding: 10px;
   margin-bottom: 10px;
   width: 100%;
+  font-family: 'Poppins',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+color: #172B4D;
+}
+.submission{
+  border: none;
+  font-family: 'Poppins',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+color: #6070FF;
+padding: 16px;
+background: #ffffff;
+border-radius: 8px;
+
+text-align: center;
+letter-spacing: 0.03em;
+
 }

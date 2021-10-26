@@ -32,15 +32,13 @@
 
 /* positioning the whole body and placing a background color */
 body {
-  position: relative;
-  width: 375px;
-  height: 5410px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
   background: #e5e5e5;
 }
 
 .works {
-  position: relative;
-  width: 375px;
+  display: grid;
   height: auto;
   background: #e5e5e5;
 }
@@ -65,8 +63,6 @@ header {
 
 /* Positioning introduction text and styling introduction text */
 .warm {
-  position: static;
-  width: 327px;
   height: 150px;
   left: 24px;
   top: 114px;
@@ -129,9 +125,6 @@ img[src*="peace.svg"]:hover {
 
 .grid-container {
   display: grid;
-  grid-template-rows: auto auto auto auto;
-  row-gap: 114px;
-  background-color: #e5e5e5;
 }
 
 /* placing a border box around the cards */
@@ -142,8 +135,7 @@ img[src*="peace.svg"]:hover {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-bottom:  15px;
 }
 
 /* position the experience-container */
@@ -403,4 +395,45 @@ button:hover:active {
 
 button:hover:disabled {
   background-color: #fff !important;
+}
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./pics/contact.png");
+  background-color: #6070ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 80px;
+  padding: 25px;
+  align-content: center;
+}
+.contact_heading{
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: bold;
+  font-style: normal;
+}
+.contact_text{
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
+  font-style: normal;
+}
+form{
+  padding: 20px;
+  align-items: center;
+  border: solid 1px red;
+}
+.form_input{
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
 }

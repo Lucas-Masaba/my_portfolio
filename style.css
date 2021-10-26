@@ -428,7 +428,6 @@ button:hover:disabled {
 form{
   padding: 20px;
   align-items: center;
-  border: solid 1px red;
 }
 .form_input{
   border-radius: 8px;

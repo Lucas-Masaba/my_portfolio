@@ -14,6 +14,7 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* positioning my social media icons */
@@ -59,7 +60,6 @@ header {
   padding-top: 0;
   background-image: url("./pics/background.png");
   background-repeat: no-repeat;
-  width: 375px;
 }
 
 /* Positioning introduction text and styling introduction text */
@@ -126,7 +126,8 @@ img[src*="peace.svg"]:hover {
 
 .grid-container {
   display: grid;
-  width: 20px;
+  margin: 20px;
+  margin-left: 0;
 }
 
 /* placing a border box around the cards */
@@ -138,7 +139,6 @@ img[src*="peace.svg"]:hover {
   flex-direction: column;
   background-color: #fff;
   margin-bottom: 15px;
-  width: 375px;
 }
 
 /* position the experience-container */
@@ -205,11 +205,7 @@ img[src*="peace.svg"]:hover {
   background-color: #ebebff;
   border-radius: 8px;
   border: none;
-  width: 89px;
   height: 24px;
-  left: 114px;
-  top: 0;
-  position: static;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -245,16 +241,13 @@ img[src*="peace.svg"]:hover {
   border-top-right-radius: 80px;
   background-color: #fff;
   padding: 20px;
-  margin-top: 114px;
-  margin-bottom: 114px;
-  width: 375px;
+  margin-bottom: 60px;
 }
 
 .intro {
   font-weight: bold;
   color: #172b4d;
   font-size: 40px;
-  padding-top: 114px;
 }
 
 .hello {
@@ -412,7 +405,7 @@ button:hover:disabled {
   background-position: 100%;
   padding: 25px;
   align-content: center;
-  width: 375px;
+  margin-top: 100px;
 }
 
 .contact_heading {
@@ -471,7 +464,7 @@ form {
   letter-spacing: 0.03em;
 }
 
-.screenshot_x {
-  height: auto;
-  max-width: 100%;
+.bottom_section {
+  background-color: white;
+  border-top-right-radius: 80px;
 }

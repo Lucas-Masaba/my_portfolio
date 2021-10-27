@@ -488,12 +488,33 @@ form {
   .enabled_png {
     display: none;
   }
-
+  .color_header{
+    background-color: #ffffff;
+  }
   #begin {
     background-image: url("./pics/desktop_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .form_input{
+    border-radius: 2px;
+    width: 40%;  
+  } 
+  #contact_form{
+    background-image: url("./pics/contact_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-color: #6070FF;
+    
+  }
+  
 }
 
 @media (max-width: 600px) {

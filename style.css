@@ -8,11 +8,13 @@
   font-weight: bold;
   text-decoration: none;
 }
+
 .section_nav {
   display: flex;
   align-items: baseline;
   text-align: center;
 }
+
 .page_links {
   font-style: normal;
   font-weight: 500;
@@ -23,18 +25,6 @@
   padding-right: 32px;
 }
 
-@media (min-width: 600px) {
-    .enabled_png{
-    display: none;
-  }
-
-  
-}
-@media (max-width: 600px) {
-    .page_links{
-      display: none;
-    }
-}
 /* positioning all the elements in the header element inline */
 .header-nav {
   display: flex;
@@ -85,20 +75,24 @@ header {
   padding: 114px 24px;
   padding-top: 0;
   background-image: url("./pics/background.png");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 /* Positioning introduction text and styling introduction text */
 .warm {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.37px;
   height: 150px;
   left: 24px;
   top: 114px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
-  line-height: 52px;
-  color: #344563;
+  line-height: 60px;
+  color: #091e42;
 }
 
 /* styling further intro */
@@ -222,7 +216,6 @@ img[src*="peace.svg"]:hover {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  
   margin-left: 0;
 }
 
@@ -376,9 +369,7 @@ img[src*="peace.svg"]:hover {
 }
 
 .fix {
-  
   height: 12px;
-  
   left: 10px;
   top: 6px;
   padding-top: 20px;
@@ -491,4 +482,22 @@ form {
 .bottom_section {
   background-color: white;
   border-top-right-radius: 80px;
+}
+
+@media (min-width: 600px) {
+  .enabled_png {
+    display: none;
+  }
+
+  #begin {
+    background-image: url("./pics/desktop_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 600px) {
+  .page_links {
+    display: none;
+  }
 }

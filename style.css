@@ -1,7 +1,6 @@
 /* adding dimensions, color, shappe, font to My Logo */
 .my-logo {
   height: 16px;
-  width: 68px;
   left: 7px;
   color: #6070ff;
   font-family: Arial, Helvetica, sans-serif;
@@ -9,12 +8,39 @@
   font-weight: bold;
   text-decoration: none;
 }
+.section_nav {
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+}
+.page_links {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  text-decoration: none;
+  padding-right: 32px;
+}
 
+@media (min-width: 600px) {
+    .enabled_png{
+    display: none;
+  }
+
+  
+}
+@media (max-width: 600px) {
+    .page_links{
+      display: none;
+    }
+}
 /* positioning all the elements in the header element inline */
 .header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: baseline;
 }
 
 /* positioning my social media icons */
@@ -53,7 +79,7 @@ header {
 }
 
 /* position the whole section and background image */
-.begin {
+#begin {
   display: flex;
   flex-direction: column;
   padding: 114px 24px;
@@ -196,7 +222,7 @@ img[src*="peace.svg"]:hover {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  margin-right: 108px;
+  
   margin-left: 0;
 }
 
@@ -224,7 +250,6 @@ img[src*="peace.svg"]:hover {
 
 .seen-project {
   color: #396df2;
-  display: block;
   width: 50%;
   padding: 20px;
   border-radius: 8px;
@@ -237,7 +262,7 @@ img[src*="peace.svg"]:hover {
   cursor: pointer;
 }
 
-.about-myself {
+#about-myself {
   border-top-right-radius: 80px;
   background-color: #fff;
   padding: 20px;
@@ -351,9 +376,9 @@ img[src*="peace.svg"]:hover {
 }
 
 .fix {
-  display: block;
+  
   height: 12px;
-  width: 6px;
+  
   left: 10px;
   top: 6px;
   padding-top: 20px;
@@ -361,7 +386,6 @@ img[src*="peace.svg"]:hover {
 }
 
 img[src*="Union.png"] {
-  display: block;
   height: 12px;
   width: 20px;
   left: 10px;
@@ -394,7 +418,7 @@ button:hover:disabled {
   background-color: #fff !important;
 }
 
-.contact_form {
+#contact_form {
   display: flex;
   flex-direction: column;
   background-image: url("./pics/contact.png");

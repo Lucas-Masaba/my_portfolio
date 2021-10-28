@@ -514,6 +514,59 @@ form {
     background-color: #6070FF;
     
   }
+  .seperate_container {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 46px;
+    width: 100%;
+  }
+  
+  .screenshot {
+    width: 100%;
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+  }
+  .seperate{
+    width: 100%;
+  }
+  .experience-container{
+    display: inline-flex;
+    
+    
+  }
+  .canopy, .dot, .back-end-dev{
+    padding-right: 12px;
+    padding-left: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+ 
+  .seen-project{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    width: auto;
+  }
+  .descreptive-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .seperate_container_y{
+    display: flex;
+    flex-direction: row-reverse;
+    grid-gap: 46px;
+    width: 100%;
+  }
+  .card{
+    margin-top: 114px;
+    margin-bottom: 114px;
+  }
   
 }
 

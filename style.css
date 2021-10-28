@@ -503,7 +503,13 @@ form {
     background-image: url("./pics/desktop_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    
+    padding-left: 260px;
+    padding-right: 260px;
+    padding-top: 40px;
+    padding-bottom: 255px;
   }
+  
 
   form {
     display: flex;
@@ -545,9 +551,11 @@ form {
   .experience-container {
     display: inline-flex;
   }
-
+  .my-logo{
+    margin-top: 25px;
+    margin-left: 155px;
+  }
   .canopy,
-  .dot,
   .back-end-dev {
     padding-right: 12px;
     padding-left: 12px;

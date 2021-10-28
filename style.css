@@ -490,7 +490,7 @@ form {
   border-top-right-radius: 80px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 481px) and (min-width: 768px) {
   .enabled_png {
     display: none;
   }
@@ -621,7 +621,7 @@ form {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) and (max-width: 1100px) {
   .page_links {
     display: none;
   }

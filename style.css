@@ -260,7 +260,6 @@ img[src*="peace.svg"]:hover {
   background-color: #fff;
   padding: 20px;
   margin-bottom: 60px;
-  
 }
 
 .intro {
@@ -347,7 +346,7 @@ img[src*="peace.svg"]:hover {
   font-size: 15px;
   line-height: 20px;
   color: #253858;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .tools {
@@ -490,54 +489,61 @@ form {
   .enabled_png {
     display: none;
   }
-  .color_header{
-    background-color: #ffffff;
+
+  .color_header {
+    background-color: #fff;
   }
+
   #begin {
     background-image: url("./pics/desktop_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
-  form{
+
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
   }
-  .form_input{
+
+  .form_input {
     border-radius: 2px;
-    width: 40%;  
-  } 
-  #contact_form{
+    width: 40%;
+  }
+
+  #contact_form {
     background-image: url("./pics/contact_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
-    background-color: #6070FF;
-    
+    background-color: #6070ff;
   }
+
   .seperate_container {
     display: flex;
     flex-direction: row;
     grid-gap: 46px;
     width: 100%;
   }
-  
+
   .screenshot {
     width: 100%;
     width: 544px;
     height: 448px;
     border-radius: 8px;
   }
-  .seperate{
+
+  .seperate {
     width: 100%;
   }
-  .experience-container{
+
+  .experience-container {
     display: inline-flex;
-    
-    
   }
-  .canopy, .dot, .back-end-dev{
+
+  .canopy,
+  .dot,
+  .back-end-dev {
     padding-right: 12px;
     padding-left: 12px;
     font-style: normal;
@@ -545,45 +551,60 @@ form {
     font-size: 18px;
     line-height: 24px;
   }
- 
-  .seen-project{
+
+  .seen-project {
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
     width: auto;
   }
+
   .descreptive-heading {
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 52px;
   }
-  .seperate_container_y{
+
+  .seperate_container_y {
     display: flex;
     flex-direction: row-reverse;
     grid-gap: 46px;
     width: 100%;
   }
-  .card{
+
+  .card {
     margin-top: 114px;
     margin-bottom: 114px;
   }
-  .split{
+
+  .split {
     display: flex;
     flex-direction: row;
     grid-gap: 46px;
     width: 100%;
   }
-  .individual_split{
-width: 100%;
+
+  .individual_split {
+    width: 100%;
   }
-  .languages{
+
+  .languages {
     display: flex;
     flex-direction: row;
   }
-  .java{
+
+  .java {
     padding-left: 15px;
+  }
+
+  header {
+    background-color: #fff;
+  }
+
+  .chirp {
+    padding-right: 21px;
   }
 }
 

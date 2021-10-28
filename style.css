@@ -7,6 +7,13 @@
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
+  animation: rotate-logo 2s;
+}
+
+@keyframes rotate-logo {
+   to {
+     transform: rotateZ(360deg);
+   }
 }
 
 .section_nav {

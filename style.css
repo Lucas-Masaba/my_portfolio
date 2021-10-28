@@ -260,6 +260,7 @@ img[src*="peace.svg"]:hover {
   background-color: #fff;
   padding: 20px;
   margin-bottom: 60px;
+  
 }
 
 .intro {
@@ -346,6 +347,7 @@ img[src*="peace.svg"]:hover {
   font-size: 15px;
   line-height: 20px;
   color: #253858;
+  margin-left: 0px;
 }
 
 .tools {
@@ -567,7 +569,22 @@ form {
     margin-top: 114px;
     margin-bottom: 114px;
   }
-  
+  .split{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 46px;
+    width: 100%;
+  }
+  .individual_split{
+width: 100%;
+  }
+  .languages{
+    display: flex;
+    flex-direction: row;
+  }
+  .java{
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 600px) {

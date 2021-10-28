@@ -540,6 +540,7 @@ form {
     height: 448px;
     border-radius: 8px;
   }
+   
 
   .seperate {
     width: 100%;
@@ -630,4 +631,11 @@ form {
   .page_links {
     display: none;
   }
+}
+.screenshot{
+  transition: all .5s ease-in-out;
+}
+.screenshot:hover{
+  transform: scale(1.1);
+
 }

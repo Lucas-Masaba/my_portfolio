@@ -508,7 +508,6 @@ form {
     padding-bottom: 255px;
   }
 
-
   form {
     display: flex;
     flex-direction: column;
@@ -601,11 +600,12 @@ form {
   .individual_split {
     width: 100%;
   }
+
   .section_nav {
-  display: flex;
-  align-items: baseline;
-  text-align: center;
-  margin-right: 120px;
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    margin-right: 120px;
   }
 
   .languages {

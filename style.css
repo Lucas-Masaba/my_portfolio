@@ -11,9 +11,9 @@
 }
 
 @keyframes rotate-logo {
-   to {
-     transform: rotateZ(360deg);
-   }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 .section_nav {
@@ -547,7 +547,7 @@ form {
     height: 448px;
     border-radius: 8px;
   }
-   
+
 
   .seperate {
     width: 100%;
@@ -639,10 +639,11 @@ form {
     display: none;
   }
 }
-.screenshot{
-  transition: all .5s ease-in-out;
-}
-.screenshot:hover{
-  transform: scale(1.1);
 
+.screenshot {
+  transition: all 0.5s ease-in-out;
+}
+
+.screenshot:hover {
+  transform: scale(1.1);
 }

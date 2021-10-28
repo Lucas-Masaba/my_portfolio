@@ -66,6 +66,7 @@ header {
   flex-direction: column;
   padding: 114px 24px;
   padding-bottom: 56.01px;
+  background-color: #ffffff;
 }
 
 /* position the whole section and background image */
@@ -77,6 +78,8 @@ header {
   background-image: url("./pics/background.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-bottom-left-radius: 80px;
 }
 
 /* Positioning introduction text and styling introduction text */
@@ -147,7 +150,8 @@ img[src*="peace.svg"]:hover {
 .grid-container {
   display: grid;
   margin: 20px;
-  margin-left: 0;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 /* placing a border box around the cards */
@@ -158,7 +162,8 @@ img[src*="peace.svg"]:hover {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 88px;
+  margin-top: 88px;
 }
 
 /* position the experience-container */
@@ -575,8 +580,8 @@ form {
   }
 
   .card {
-    margin-top: 114px;
-    margin-bottom: 114px;
+    margin: 142px;
+    
   }
 
   .split {

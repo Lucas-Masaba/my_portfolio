@@ -64,9 +64,8 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  padding: 114px 24px;
   padding-bottom: 56.01px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 /* position the whole section and background image */
@@ -78,7 +77,7 @@ header {
   background-image: url("./pics/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: #fff;
   border-bottom-left-radius: 80px;
 }
 
@@ -503,13 +502,12 @@ form {
     background-image: url("./pics/desktop_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    
     padding-left: 260px;
     padding-right: 260px;
     padding-top: 40px;
     padding-bottom: 255px;
   }
-  
+
 
   form {
     display: flex;
@@ -551,10 +549,12 @@ form {
   .experience-container {
     display: inline-flex;
   }
-  .my-logo{
+
+  .my-logo {
     margin-top: 25px;
     margin-left: 155px;
   }
+
   .canopy,
   .back-end-dev {
     padding-right: 12px;
@@ -589,7 +589,6 @@ form {
 
   .card {
     margin: 142px;
-    
   }
 
   .split {
@@ -601,6 +600,12 @@ form {
 
   .individual_split {
     width: 100%;
+  }
+  .section_nav {
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  margin-right: 120px;
   }
 
   .languages {

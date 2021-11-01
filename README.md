@@ -1,6 +1,6 @@
-# mobile-version-portfolio
+# my_portfolio
 
-> A mobile version of a portfolio
+> My portfolio
 
 ![screenshot](./pics/screenshot.png)
 
@@ -37,9 +37,9 @@ git clone git@github.com:Lucas-Masaba/mobile-version-portfolio-skeleton
 - Twitter: [@twitterhandle](https://twitter.com/MasabaLuke)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/khusiima-luke-masaba-59060a121)
 
+## Online View
 
-
-
+[Here](https://lucas-masaba.github.io/my_portfolio/) is a link to the online view of my website
 
 ## Show your support
 

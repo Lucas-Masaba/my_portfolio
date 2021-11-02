@@ -1,4 +1,4 @@
-/* adding dimensions, color, shappe, font to My Logo */
+
 .my-logo {
   height: 16px;
   left: 7px;
@@ -32,7 +32,6 @@
   padding-right: 32px;
 }
 
-/* positioning all the elements in the header element inline */
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -40,7 +39,6 @@
   align-items: baseline;
 }
 
-/* positioning my social media icons */
 .icon-a {
   width: 160px;
   display: flex;
@@ -54,7 +52,6 @@
   padding-left: 0;
 }
 
-/* positioning the whole body and placing a background color */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -67,7 +64,6 @@ body {
   background: #e5e5e5;
 }
 
-/* Working on header position */
 header {
   display: flex;
   flex-direction: column;
@@ -75,7 +71,6 @@ header {
   background-color: #fff;
 }
 
-/* position the whole section and background image */
 #begin {
   display: flex;
   flex-direction: column;
@@ -88,7 +83,6 @@ header {
   border-bottom-left-radius: 80px;
 }
 
-/* Positioning introduction text and styling introduction text */
 .warm {
   display: flex;
   align-items: center;
@@ -104,7 +98,6 @@ header {
   color: #091e42;
 }
 
-/* styling further intro */
 .intro-a {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -114,7 +107,6 @@ header {
   color: #344563;
 }
 
-/* styling the let's connect text */
 .connect-a {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -124,7 +116,6 @@ header {
   color: #7f8cff;
 }
 
-/* adding hover button interactions */
 .connect-a:hover {
   cursor: pointer;
 }
@@ -160,7 +151,6 @@ img[src*="peace.svg"]:hover {
   margin-right: 24px;
 }
 
-/* placing a border box around the cards */
 .card {
   border: solid 1px #dfe1e6;
   border-radius: 18px;
@@ -172,7 +162,6 @@ img[src*="peace.svg"]:hover {
   margin-top: 88px;
 }
 
-/* position the experience-container */
 .experience-container {
   display: flex;
   justify-content: space-between;
@@ -181,7 +170,6 @@ img[src*="peace.svg"]:hover {
   padding-left: 0;
 }
 
-/* styling the descriptive-heading */
 .descreptive-heading {
   font-weight: bold;
   color: #172b4d;
@@ -191,7 +179,6 @@ img[src*="peace.svg"]:hover {
   line-height: 44px;
 }
 
-/* styling canopy */
 .canopy {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -210,7 +197,6 @@ img[src*="peace.svg"]:hover {
   line-height: 16px;
 }
 
-/* styling paragraph class */
 .paragraph {
   color: #344563;
   font-family: 'Poppins', sans-serif;
@@ -220,7 +206,6 @@ img[src*="peace.svg"]:hover {
   line-height: 24px;
 }
 
-/* styling multiple buttons */
 .language-button {
   list-style-type: none;
   display: flex;

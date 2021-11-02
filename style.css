@@ -254,7 +254,7 @@ img[src*="peace.svg"]:hover {
 #about-myself {
   border-top-right-radius: 80px;
   background-color: #fff;
-  padding: 100px;
+  padding: 20px;
   margin-bottom: 60px;
 }
 
@@ -616,8 +616,13 @@ form {
   .chirp {
     padding-right: 21px;
   }
-  .contact_text{
+
+  .contact_text {
     padding-inline: 200px;
+  }
+
+  #about-myself {
+    padding-inline: 100px;
   }
 }
 

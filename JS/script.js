@@ -8,7 +8,19 @@ openMobileMenu.forEach(button => {
     })
 })
 
+closeMobileMenu.forEach(button => {
+    button.addEventListener('click', () => {
+        const mobileMenu = button.closest('.mobile-menu')
+        closeMenu(mobileMenu);
+    })
+})
+
 function openMenu(mobileMenu) {
     if(mobileMenu == null) return
     mobileMenu.classList.add('active');
+}
+ 
+function closeMenu(mobileMenu) {
+    if(mobileMenu == null) return
+    mobileMenu.classList.remove('active');
 }

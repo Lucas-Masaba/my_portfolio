@@ -80,13 +80,14 @@ header {
   mix-blend-mode: multiply;
   transition: 200ms ease-in-out;
   transform: scale(0);
+  z-index: 10;
 }
 
 .mobile-menu.active {
   transform: scale(1);
 }
 
-.menu-header {
+.mobile-menu-header {
   display: flex;
   justify-content: flex-end;
 }

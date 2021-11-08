@@ -78,6 +78,12 @@ header {
   right: 0;
   background: #6070ff;
   mix-blend-mode: multiply;
+  transition: 200ms ease-in-out;
+  transform: scale(0);
+}
+
+.mobile-menu.active {
+  transform: scale(1);
 }
 
 .menu-header {
@@ -94,9 +100,14 @@ header {
   line-height: 44px;
 }
 
-.close-button{
+.close-button {
   border: none;
+  cursor: pointer;
+  outline: none;
   color: #ffffff;
+  background: none;
+  font-size: 2.25rem;
+  font-weight: bold;
 }
 
 #begin {

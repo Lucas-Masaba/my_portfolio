@@ -70,6 +70,35 @@ header {
   background-color: #fff;
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu ul {
+  list-style: none; 
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.close-button{
+  border: none;
+  color: #ffffff;
+}
+
 #begin {
   display: flex;
   flex-direction: column;

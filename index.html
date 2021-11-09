@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <title>Lucas' Portfolio</title>
 </head>
@@ -13,13 +13,19 @@
 <body>
   <div class="mobile-menu" id="mobile-menu">
     <div class="mobile-menu-header">
-      <button data-close-button class="close-button">&times;</button>
+      <button type="button" data-close-button class="close-button">&times;</button>
     </div>
-    <ul>
-      <li>Portfolio</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
+    <nav>
+      <a href="#begin" data-close-button class="navigate">
+        Portfolio
+      </a>
+      <a href="#about-myself" data-close-button class="navigate">
+        About
+      </a>
+      <a href="#contact_form" data-close-button class="navigate">
+        Contact
+      </a>
+    </nav>
   </div>
   <header>
     <div class="header-nav">
@@ -28,7 +34,7 @@
         <a class="page_links" href="#begin">Portfolio</a>
         <a class="page_links" href="#about-myself">About</a>
         <a class="page_links" href="#contact_form">Contact</a>
-        <button data-mobile-menu-target="#mobile-menu">
+        <button type="button" class="hamburger" data-mobile-menu-target="#mobile-menu">
           <img class="enabled_png" src="./pics/Enabled.png" alt="This is a menu icon">
         </button>
       </nav>
@@ -264,7 +270,7 @@
       </div>
     </section>
   </div>
-<script defer src="./JS/script.js"></script>
+  <script defer src="./JS/script.js"></script>
 </body>
 
 </html>

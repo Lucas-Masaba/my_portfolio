@@ -70,47 +70,6 @@ header {
   background-color: #fff;
 }
 
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #6070ff;
-  mix-blend-mode: multiply;
-  transition: 200ms ease-in-out;
-  transform: scale(0);
-  z-index: 10;
-}
-
-.mobile-menu.active {
-  transform: scale(1);
-}
-
-.mobile-menu-header {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.mobile-menu ul {
-  list-style: none; 
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.close-button {
-  border: none;
-  cursor: pointer;
-  outline: none;
-  color: #ffffff;
-  background: none;
-  font-size: 2.25rem;
-  font-weight: bold;
-}
-
 #begin {
   display: flex;
   flex-direction: column;
@@ -429,21 +388,21 @@ img[src*="Union.png"] {
 }
 
 button:hover:enabled {
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
 button:hover:hover {
-  background-color: #6070ff !important;
-  color: #fff !important;
+  background-color: #6070ff;
+  color: #fff;
 }
 
 button:hover:active {
-  background-color: #2230d2 !important;
-  color: #fff !important;
+  background-color: #2230d2;
+  color: #fff;
 }
 
 button:hover:disabled {
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
 #contact_form {
@@ -664,11 +623,98 @@ form {
   #about-myself {
     padding-inline: 100px;
   }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .close-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) and (max-width: 1100px) {
   .page_links {
     display: none;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #6070ff;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(8px);
+    transition: 200ms ease-in-out;
+    transform: scale(0);
+    z-index: 10;
+  }
+
+  .mobile-menu.active {
+    transform: scale(1);
+  }
+
+  .mobile-menu-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 4%;
+  }
+
+  .close-button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background: none;
+    font-size: 2.25rem;
+    font-weight: 100;
+  }
+
+  .hamburger {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .hamburger:hover:enabled {
+    background-color: #fff;
+  }
+
+  .hamburger:hover:hover {
+    background-color: #fff;
+    color: #fff;
+  }
+
+  .hamburger:hover:active {
+    background-color: #fff;
+    color: #fff;
+  }
+
+  .hamburger:hover:disabled {
+    background-color: #2230d2;
   }
 }
 

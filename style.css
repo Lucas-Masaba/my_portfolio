@@ -642,6 +642,10 @@ form {
     display: none;
   }
 
+  header {
+    padding: 4%;
+  }
+
   .mobile-menu {
     position: fixed;
     top: 0;

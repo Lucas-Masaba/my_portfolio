@@ -650,7 +650,6 @@ form {
     right: 0;
     background: #6070ff;
     mix-blend-mode: multiply;
-    backdrop-filter: blur(8px);
     transition: 200ms ease-in-out;
     transform: scale(0);
     z-index: 10;
@@ -729,4 +728,9 @@ form {
 
 .screenshot_container {
   width: 100%;
+}
+
+.blur {
+  position: fixed;
+  filter: blur(8px);
 }

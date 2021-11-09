@@ -151,7 +151,7 @@ img[src*="peace.svg"]:hover {
 }
 
 .card {
-  border: solid 1px #dfe1e6;
+  border: 1px solid #dfe1e6;
   border-radius: 18px;
   padding: 20px;
   display: flex;
@@ -778,4 +778,10 @@ form {
 .project-detail-header{
   display: flex;
   justify-content: space-between;
+}
+
+.close-button-project {
+  background: none;
+  border: none;
+  font-size: 40px;
 }

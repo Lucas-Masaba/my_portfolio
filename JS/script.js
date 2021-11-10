@@ -38,59 +38,70 @@ openMobileMenu.forEach((button) => {
 
 closeMobileMenu.forEach((button) => {
   button.addEventListener('click', () => {
+    
     const mobileMenu = button.closest('.mobile-menu');
     closeMenu(mobileMenu);
   });
 });
 projectDetails.forEach((button)=>{
+  console.log(button)
+  var test = button;
     button.addEventListener('click', (e) => {
-        const selected_project = projects.filter((project)=> project.id == e.target.id)[0]
-        mainTag.classList.add('blur');
-        projectDetail.classList.add('active');
-        projectDetail.innerHTML = `
-        <article class="work-container flex project-1">
-            <div class="project-detail-header">
-              <h3>${selected_project.name}</h3>
-              <button data-close-button class="close-button-project">&times;</button>
-           </div>
+ 
+      const idModal = test.getAttribute('id')
+      idModalTwo= ".project-"+idModal;
+      const modalWindow = document.querySelector(idModalTwo)
+      modalWindow.classList.add('showModal', 'animate__bounceInDown')
+      const closeModalMobile = modalWindow.querySelector('[data-close-button]')
+      
+      closeModalMobile.addEventListener("click",()=>{
+        modalWindow.classList.remove('showModal', 'animate__bounceInDown')
+      })
+        
+        // projectDetail.innerHTML = `
+        // <article class="work-container flex project-1">
+        //     <div class="project-detail-header">
+        //       <h3>${selected_project.name}</h3>
+        //       <button data-close-button class="close-button-project">&times;</button>
+        //    </div>
            
              
-              <ul class="experience-container">
-            <li>
-              <p class="canopy">CANOPY</p>
-            </li>
-            <li><img class="dot" src="./pics/dot.png" alt="This a dot image"></li>
-            <li>
-              <p class="back-end-dev">Back End Dev</p>
-            </li>
-            <li><img class="dot" src="./pics/dot.png" alt="This a dot image"></li>
-            <li>
-              <p class="back-end-dev">2015</p>
-            </li>
-          </ul>
+        //       <ul class="experience-container">
+        //     <li>
+        //       <p class="canopy">CANOPY</p>
+        //     </li>
+        //     <li><img class="dot" src="./pics/dot.png" alt="This a dot image"></li>
+        //     <li>
+        //       <p class="back-end-dev">Back End Dev</p>
+        //     </li>
+        //     <li><img class="dot" src="./pics/dot.png" alt="This a dot image"></li>
+        //     <li>
+        //       <p class="back-end-dev">2015</p>
+        //     </li>
+        //   </ul>
             
-          <div class="work-img">
-            <img src=${selected_project.image} alt="Picture for the project Tonic, showing a laptop and a widescreen." />
-          </div>
-          <div class="work-description">
-            <p>
-              ${selected_project.descrition}
-            </p>
-           <ul class="language-button">
-            <li><button type="button" class="l-button">html</button></li>
-            <li><button type="button" class="l-button">css</button></li>
-            <li><button type="button" class="l-button">javaScript</button></li>
-          </ul>
-            <div class="project-detail-buttons">
-                <button type="button" class="seen-project see-source">See Project
-                <img class="see-source-img" src=${selected_project.imageLive} alt="" />
-                </button>
-                <button type="button" class="seen-project see-source">See Project
-                <img class="see-source-img" src=${selected_project.imageGit} alt="" />
-                </button>
-            </div>
-          </div>
-        </article>
-        `;
+        //   <div class="work-img">
+        //     <img src=${selected_project.image} alt="Picture for the project Tonic, showing a laptop and a widescreen." />
+        //   </div>
+        //   <div class="work-description">
+        //     <p>
+        //       ${selected_project.descrition}
+        //     </p>
+        //    <ul class="language-button">
+        //     <li><button type="button" class="l-button">html</button></li>
+        //     <li><button type="button" class="l-button">css</button></li>
+        //     <li><button type="button" class="l-button">javaScript</button></li>
+        //   </ul>
+        //     <div class="project-detail-buttons">
+        //         <button type="button" class="seen-project see-source">See Project
+        //         <img class="see-source-img" src=${selected_project.imageLive} alt="" />
+        //         </button>
+        //         <button type="button" class="seen-project see-source">See Project
+        //         <img class="see-source-img" src=${selected_project.imageGit} alt="" />
+        //         </button>
+        //     </div>
+        //   </div>
+        // </article>
+        // `;
     })
 })

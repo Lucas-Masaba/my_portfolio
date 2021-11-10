@@ -9,33 +9,33 @@ const projects = [
     name: 'Tonic',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: './pics/snapshot1.png',
-    linkBtnOne: 'project1.html',
+    imageGit: './pics/detailProjectGit.png',
     imageLive: './pics/detailProjectLive.png',
 
   },
   {
     id: 2,
-    name: 'modal 2',
+    name: 'Multi-Post Stories',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: './pics/snapshot1.png',
+    image: './pics/snapshot2.png',
     imageGit: './pics/detailProjectGit.png',
     imageLive: './pics/detailProjectLive.png',
 
   },
   {
     id: 3,
-    name: 'modal 3',
+    name: 'Tonic',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: './pics/snapshot1.png',
+    image: './pics/snapshot3.png',
     imageGit: './pics/detailProjectGit.png',
     imageLive: './pics/detailProjectLive.png',
 
   },
   {
     id: 4,
-    name: 'modal 4',
+    name: 'Multi-Post Stories',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: './pics/snapshot1.png',
+    image: './pics/snapshot4.png',
     imageGit: './pics/detailProjectGit.png',
     imageLive: './pics/detailProjectLive.png',
 
@@ -73,19 +73,22 @@ projectDetails.forEach((button) => {
 
     const modalWindow = document.querySelector('.project-details-modal');
     modalWindow.classList.add('showModal', 'animate__bounceInDown');
+    mainTag.classList.add('blur');
     const h3Test = modalWindow.querySelector('h3');
     const paragraph = modalWindow.querySelector('.work-description p');
     const imageNode = modalWindow.querySelector('.work-img img');
     const githubButton = modalWindow.querySelector('.github');
+    const arrowCircleButton = modalWindow.querySelector('.arrow_circle');
     h3Test.innerHTML = projects[idModal].name;
     paragraph.innerHTML = projects[idModal].descrition;
     imageNode.src = projects[idModal].image;
-    githubButton.href = 'teste12322';
-
+    githubButton.src = projects[idModal].imageGit;
+    arrowCircleButton.src = projects[idModal].imageLive;
     const closeModalMobile = modalWindow.querySelector('[data-close-button]');
 
     closeModalMobile.addEventListener('click', () => {
       modalWindow.classList.remove('showModal', 'animate__bounceInDown');
+      mainTag.classList.remove('blur');
     });
   });
 });

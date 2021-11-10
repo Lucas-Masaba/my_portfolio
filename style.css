@@ -460,6 +460,12 @@ form {
   color: #172b4d;
 }
 
+small {
+  font-weight: bold;
+  background-color: #f00;
+  color: white;
+}
+
 .submission {
   border: none;
   font-family: 'Poppins', sans-serif;

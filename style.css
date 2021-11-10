@@ -759,8 +759,6 @@ form {
   background-color: white;
 }
 
-
-
 .see-source {
   display: flex;
   width: 90%;
@@ -775,7 +773,7 @@ form {
   display: flex;
 }
 
-.project-detail-header{
+.project-detail-header {
   display: flex;
   justify-content: space-between;
 }
@@ -800,7 +798,6 @@ form {
   justify-content: center;
   visibility: hidden;
   opacity: 0;
-
 }
 
 .modal-details-content {
@@ -808,7 +805,7 @@ form {
   background-color: white;
 }
 
-.showModal{
+.showModal {
   visibility: visible;
   opacity: 1;
 }

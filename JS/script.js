@@ -1,22 +1,46 @@
 const openMobileMenu = document.querySelectorAll('[data-mobile-menu-target]');
 const closeMobileMenu = document.querySelectorAll('[data-close-button]');
 const mainTag = document.querySelector('.main');
-
-const projectDetails = document.querySelectorAll('.seen-project')
-const projectDetail = document.querySelector('.project-detail');
-
+const projectDetails = document.querySelectorAll('.seen-project');
 
 const projects = [
-    {
-        id: 1,
-        name:  "Tonic",
-        descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-        image: "./pics/snapshot1.png",
-        imageGit: "./pics/detailProjectGit.png",
-        imageLive: "./pics/detailProjectLive.png"
+  {
+    id: 1,
+    name: 'Tonic',
+    descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: './pics/snapshot1.png',
+    linkBtnOne: 'project1.html',
+    imageLive: './pics/detailProjectLive.png',
 
-    }
-]
+  },
+  {
+    id: 2,
+    name: 'modal 2',
+    descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: './pics/snapshot1.png',
+    imageGit: './pics/detailProjectGit.png',
+    imageLive: './pics/detailProjectLive.png',
+
+  },
+  {
+    id: 3,
+    name: 'modal 3',
+    descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: './pics/snapshot1.png',
+    imageGit: './pics/detailProjectGit.png',
+    imageLive: './pics/detailProjectLive.png',
+
+  },
+  {
+    id: 4,
+    name: 'modal 4',
+    descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: './pics/snapshot1.png',
+    imageGit: './pics/detailProjectGit.png',
+    imageLive: './pics/detailProjectLive.png',
+
+  },
+];
 
 function openMenu(mobileMenu, mainTag) {
   if (mobileMenu == null) return;
@@ -38,70 +62,30 @@ openMobileMenu.forEach((button) => {
 
 closeMobileMenu.forEach((button) => {
   button.addEventListener('click', () => {
-    
     const mobileMenu = button.closest('.mobile-menu');
     closeMenu(mobileMenu);
   });
 });
-projectDetails.forEach((button)=>{
-  console.log(button)
-  var test = button;
-    button.addEventListener('click', (e) => {
- 
-      const idModal = test.getAttribute('id')
-      idModalTwo= ".project-"+idModal;
-      const modalWindow = document.querySelector(idModalTwo)
-      modalWindow.classList.add('showModal', 'animate__bounceInDown')
-      const closeModalMobile = modalWindow.querySelector('[data-close-button]')
-      
-      closeModalMobile.addEventListener("click",()=>{
-        modalWindow.classList.remove('showModal', 'animate__bounceInDown')
-      })
-        
-        // projectDetail.innerHTML = `
-        // <article class="work-container flex project-1">
-        //     <div class="project-detail-header">
-        //       <h3>${selected_project.name}</h3>
-        //       <button data-close-button class="close-button-project">&times;</button>
-        //    </div>
-           
-             
-        //       <ul class="experience-container">
-        //     <li>
-        //       <p class="canopy">CANOPY</p>
-        //     </li>
-        //     <li><img class="dot" src="./pics/dot.png" alt="This a dot image"></li>
-        //     <li>
-        //       <p class="back-end-dev">Back End Dev</p>
-        //     </li>
-        //     <li><img class="dot" src="./pics/dot.png" alt="This a dot image"></li>
-        //     <li>
-        //       <p class="back-end-dev">2015</p>
-        //     </li>
-        //   </ul>
-            
-        //   <div class="work-img">
-        //     <img src=${selected_project.image} alt="Picture for the project Tonic, showing a laptop and a widescreen." />
-        //   </div>
-        //   <div class="work-description">
-        //     <p>
-        //       ${selected_project.descrition}
-        //     </p>
-        //    <ul class="language-button">
-        //     <li><button type="button" class="l-button">html</button></li>
-        //     <li><button type="button" class="l-button">css</button></li>
-        //     <li><button type="button" class="l-button">javaScript</button></li>
-        //   </ul>
-        //     <div class="project-detail-buttons">
-        //         <button type="button" class="seen-project see-source">See Project
-        //         <img class="see-source-img" src=${selected_project.imageLive} alt="" />
-        //         </button>
-        //         <button type="button" class="seen-project see-source">See Project
-        //         <img class="see-source-img" src=${selected_project.imageGit} alt="" />
-        //         </button>
-        //     </div>
-        //   </div>
-        // </article>
-        // `;
-    })
-})
+projectDetails.forEach((button) => {
+  const test = button;
+  button.addEventListener('click', () => {
+    const idModal = test.getAttribute('id');
+
+    const modalWindow = document.querySelector('.project-details-modal');
+    modalWindow.classList.add('showModal', 'animate__bounceInDown');
+    const h3Test = modalWindow.querySelector('h3');
+    const paragraph = modalWindow.querySelector('.work-description p');
+    const imageNode = modalWindow.querySelector('.work-img img');
+    const githubButton = modalWindow.querySelector('.github');
+    h3Test.innerHTML = projects[idModal].name;
+    paragraph.innerHTML = projects[idModal].descrition;
+    imageNode.src = projects[idModal].image;
+    githubButton.href = 'teste12322';
+
+    const closeModalMobile = modalWindow.querySelector('[data-close-button]');
+
+    closeModalMobile.addEventListener('click', () => {
+      modalWindow.classList.remove('showModal', 'animate__bounceInDown');
+    });
+  });
+});

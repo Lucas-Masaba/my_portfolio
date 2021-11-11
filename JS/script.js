@@ -5,7 +5,7 @@ const projectDetails = document.querySelectorAll('.seen-project');
 
 const projects = [
   {
-    id: 1,
+    /*Has id=0 in HTML because this is the first element in this array with index 0*/
     name: 'Tonic',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: './pics/snapshot1.png',
@@ -14,7 +14,7 @@ const projects = [
 
   },
   {
-    id: 2,
+    /*Has id=1 in HTML because this is the first element in this array with index 1*/
     name: 'Multi-Post Stories',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: './pics/snapshot2.png',
@@ -23,7 +23,7 @@ const projects = [
 
   },
   {
-    id: 3,
+    /*Has id=2 in HTML because this is the first element in this array with index 2*/
     name: 'Tonic',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: './pics/snapshot3.png',
@@ -32,7 +32,7 @@ const projects = [
 
   },
   {
-    id: 4,
+    /*Has id=3 in HTML because this is the first element in this array with index 3*/
     name: 'Multi-Post Stories',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: './pics/snapshot4.png',
@@ -66,10 +66,11 @@ closeMobileMenu.forEach((button) => {
     closeMenu(mobileMenu);
   });
 });
+
 projectDetails.forEach((button) => {
-  const test = button;
+  
   button.addEventListener('click', () => {
-    const idModal = test.getAttribute('id');
+    const idModal = button.getAttribute('id');
 
     const modalWindow = document.querySelector('.project-details-modal');
     modalWindow.classList.add('showModal', 'animate__bounceInDown');

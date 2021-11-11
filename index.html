@@ -267,10 +267,10 @@
             coding. I’d love to help with it
           </p>
           <form id="myForm" action="https://formspree.io/f/mbjqeboa" method="post">
-            <input class="form_input" type="text" name="fullname" id="fullname" maxlength="30"
+            <input onchange="handleChange()" class="form_input" type="text" name="fullname" id="fullname" maxlength="30"
               placeholder="Enter your name here" required>
-            <input class="form_input" type="email" name="email" id="email" placeholder="Enter your email here" required>
-            <textarea class="form_input" name="message-input" id="message-input" cols="30" rows="7" maxlength="500"
+            <input onchange="handleChange()" class="form_input" type="email" name="email" id="email" placeholder="Enter your email here" required>
+            <textarea onchange="handleChange()" class="form_input" name="message-input" id="message-input" cols="30" rows="7" maxlength="500"
               placeholder="Write your message here" required></textarea>
               <small></small>
             <button type="submit" onclick="myFunction()" class="submission">Get In Touch</button>

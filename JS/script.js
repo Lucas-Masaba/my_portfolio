@@ -5,7 +5,7 @@ const projectDetails = document.querySelectorAll('.seen-project');
 
 const projects = [
   {
-    /*Has id=0 in HTML because this is the first element in this array with index 0*/
+    /* Has id=0 in HTML because this is the first element in this array with index 0 */
     name: 'Tonic',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: './pics/snapshot1.png',
@@ -14,7 +14,7 @@ const projects = [
 
   },
   {
-    /*Has id=1 in HTML because this is the first element in this array with index 1*/
+    /* Has id=1 in HTML because this is the first element in this array with index 1 */
     name: 'Multi-Post Stories',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: './pics/snapshot2.png',
@@ -23,7 +23,7 @@ const projects = [
 
   },
   {
-    /*Has id=2 in HTML because this is the first element in this array with index 2*/
+    /* Has id=2 in HTML because this is the first element in this array with index 2 */
     name: 'Tonic',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: './pics/snapshot3.png',
@@ -32,7 +32,7 @@ const projects = [
 
   },
   {
-    /*Has id=3 in HTML because this is the first element in this array with index 3*/
+    /* Has id=3 in HTML because this is the first element in this array with index 3 */
     name: 'Multi-Post Stories',
     descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: './pics/snapshot4.png',
@@ -68,7 +68,6 @@ closeMobileMenu.forEach((button) => {
 });
 
 projectDetails.forEach((button) => {
-  
   button.addEventListener('click', () => {
     const idModal = button.getAttribute('id');
 
@@ -138,3 +137,33 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+/* local storage */
+
+/* Javascript object with all data to be stored locally  */
+const fullNameForm = document.getElementById('fullname');
+const emailForm = document.getElementById('email');
+const commentForm = document.getElementById('message-input');
+
+function handleChange() {
+  const formData = {
+    fullName: fullNameForm.value,
+    email: emailForm.value,
+    comment: commentForm.value,
+  };
+  localStorage.setItem('form', JSON.stringify(formData));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const getFormValue = localStorage.getItem('form');
+  if (getFormValue) {
+    const formObject = JSON.parse(getFormValue);
+    fullNameForm.value = formObject.fullName;
+    emailForm.value = formObject.email;
+    commentForm.value = formObject.comment;
+  }
+});
+
+fullNameForm.onchange = handleChange;
+emailForm.onchange = handleChange;
+commentForm.onchange = handleChange;

@@ -804,6 +804,7 @@ small {
     border: 1px solid #dfe1e6;
     border-radius: 3%;
     padding: 2%;
+    overflow-y: auto;
   }
 
   .see-source {
@@ -870,6 +871,7 @@ small {
 
 .project-detail-buttons {
   display: flex;
+  padding-bottom: 14%;
 }
 
 .project-detail-header {

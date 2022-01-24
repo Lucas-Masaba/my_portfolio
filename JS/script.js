@@ -143,7 +143,7 @@ form.addEventListener('submit', (event) => {
 /* Javascript object with all data to be stored locally  */
 const fullNameForm = document.getElementById('fullname');
 const emailForm = document.getElementById('email');
-const commentForm = document.getElementById('message-input');
+const commentForm = document.getElementById('message_input');
 
 function handleChange() {
   const formData = {

@@ -58,19 +58,19 @@ const projects = [
   },
   {
     /* Has id=3 in HTML because this is the first element in this array with index 3 */
-    name: 'Multi-Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: './pics/snapshot4.png',
+    name: 'Space Travelers Hub',
+    description: "Have you ever thought of going to outer space and see what is beyond earth. Imagine being able to book rockets so that you have the chance to explore the marvels of the universe 🌌, doesn't that sound cool 😎. With this web app, you can book rockets and missions so that you are able to travel to the far reaches of our galaxy.",
+    image: './pics/space.png',
     imageGit: './pics/detailProjectGit.png',
     imageLive: './pics/detailProjectLive.png',
     company_name: "Microverse",
-    dev_stack: "Back End Dev",
+    dev_stack: "Front End Dev",
     year_created: "2022",
-    tech_1: "Ruby",
-    tech_2: "Rails",
-    tech_3: "SQL",
-    live_demo: "https://lucas-budget-app.herokuapp.com/",
-    git_source: "https://github.com/Lucas-Masaba/budget_app",
+    tech_1: "React",
+    tech_2: "Redux",
+    tech_3: "Webpack",
+    live_demo: "https://space-traveler-zaman-lucas.netlify.app/",
+    git_source: "https://github.com/Lucas-Masaba/space-travelers",
 
   },
 ];

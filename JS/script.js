@@ -6,38 +6,71 @@ const projectDetails = document.querySelectorAll('.seen-project');
 const projects = [
   {
     /* Has id=0 in HTML because this is the first element in this array with index 0 */
-    name: 'Tonic',
-    descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: './pics/snapshot1.png',
+    name: 'Budget App',
+    description: "Have you ever reached the end of a month and you realize you spent a crazy amount of money 🤯? Well, this app helps you keep track of those payments so that you can know how to budget your expenditure.",
+    image: './pics/budget_app.png',
     imageGit: './pics/detailProjectGit.png',
     imageLive: './pics/detailProjectLive.png',
+    company_name: "Microverse",
+    dev_stack: "Back End Dev",
+    year_created: "2022",
+    tech_1: "Ruby",
+    tech_2: "Rails",
+    tech_3: "SQL",
+    live_demo: "https://lucas-budget-app.herokuapp.com/",
+    git_source: "https://github.com/Lucas-Masaba/budget_app",
 
   },
   {
     /* Has id=1 in HTML because this is the first element in this array with index 1 */
-    name: 'Multi-Post Stories',
-    descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: './pics/snapshot2.png',
+    name: 'Hotelzilla',
+    description: "This is a hotel booking website where you can book rooms from hotels in different countries around the world through making reservations. In this project, I worked in the back-end team and was responsible for developing the API.",
+    image: './pics/hotelzilla.png',
     imageGit: './pics/detailProjectGit.png',
     imageLive: './pics/detailProjectLive.png',
+    company_name: "Microverse",
+    dev_stack: "Full Stack Dev",
+    year_created: "2022",
+    tech_1: "Ruby",
+    tech_2: "Rails",
+    tech_3: "SQL",
+    live_demo: "https://hotelzilla.netlify.app/",
+    git_source: "https://github.com/keroloussamy/Hotelzilla-api",
+
 
   },
   {
     /* Has id=2 in HTML because this is the first element in this array with index 2 */
-    name: 'Tonic',
-    descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: './pics/snapshot3.png',
+    name: 'Covid Tracker',
+    description: "with this website, one can track how covid-19 is affecting different countries around the world 🌍. You can get information on how many people have recovered, contracted the virus and died of the virus.",
+    image: './pics/covid.png',
     imageGit: './pics/detailProjectGit.png',
     imageLive: './pics/detailProjectLive.png',
+    company_name: "Microverse",
+    dev_stack: "Front End Dev",
+    year_created: "2022",
+    tech_1: "React",
+    tech_2: "Redux",
+    tech_3: "Webpack",
+    live_demo: "https://covid-metrics-lucas-masaba.netlify.app/",
+    git_source: "https://github.com/Lucas-Masaba/covid_metrics",
 
   },
   {
     /* Has id=3 in HTML because this is the first element in this array with index 3 */
     name: 'Multi-Post Stories',
-    descrition: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: './pics/snapshot4.png',
     imageGit: './pics/detailProjectGit.png',
     imageLive: './pics/detailProjectLive.png',
+    company_name: "Microverse",
+    dev_stack: "Back End Dev",
+    year_created: "2022",
+    tech_1: "Ruby",
+    tech_2: "Rails",
+    tech_3: "SQL",
+    live_demo: "https://lucas-budget-app.herokuapp.com/",
+    git_source: "https://github.com/Lucas-Masaba/budget_app",
 
   },
 ];
@@ -79,11 +112,29 @@ projectDetails.forEach((button) => {
     const imageNode = modalWindow.querySelector('.work-img img');
     const githubButton = modalWindow.querySelector('.github');
     const arrowCircleButton = modalWindow.querySelector('.arrow_circle');
+    const company = modalWindow.querySelector('.canopy')
+    const stack = modalWindow.querySelector('.back-end-dev')
+    const year = modalWindow.querySelector('.year-created')
+    const tech1 = modalWindow.querySelector('.tech-1')
+    const tech2 = modalWindow.querySelector('.tech-2')
+    const tech3 = modalWindow.querySelector('.tech-3')
+    const live = modalWindow.querySelector('.live-class')
+    const source = modalWindow.querySelector('.source-class')
+
     h3Test.innerHTML = projects[idModal].name;
-    paragraph.innerHTML = projects[idModal].descrition;
+    paragraph.innerHTML = projects[idModal].description;
     imageNode.src = projects[idModal].image;
     githubButton.src = projects[idModal].imageGit;
     arrowCircleButton.src = projects[idModal].imageLive;
+    company.innerHTML = projects[idModal].company_name
+    stack.innerHTML = projects[idModal].dev_stack
+    year.innerHTML = projects[idModal].year_created
+    tech1.innerHTML = projects[idModal].tech_1
+    tech2.innerHTML = projects[idModal].tech_2
+    tech3.innerHTML = projects[idModal].tech_3
+    live.href = projects[idModal].live_demo
+    source.href = projects[idModal].git_source
+
     const closeModalMobile = modalWindow.querySelector('[data-close-button]');
 
     closeModalMobile.addEventListener('click', () => {

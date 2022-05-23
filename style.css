@@ -678,10 +678,14 @@ small {
   .see-source {
     display: flex;
     width: 62%;
-    margin-right: 6px;
+    margin-right: 92px;
     height: 34px;
     font-size: 12px;
-    padding: 5px;
+    padding: 4px;
+  }
+
+  .live-class, .source-class {
+    text-decoration: none;
   }
 
   .see-source-img {
@@ -810,10 +814,14 @@ small {
   .see-source {
     display: flex;
     width: 62%;
-    margin-right: 20px;
+    margin-right: 80px;
     height: 48px;
     font-size: 13px;
     padding: 15px;
+  }
+
+  .live-class, .source-class {
+    text-decoration: none;
   }
 
   .see-source-img {

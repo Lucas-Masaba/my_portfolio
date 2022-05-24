@@ -6,14 +6,13 @@
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
-  animation: rotate-logo 2s;
 }
 
-@keyframes rotate-logo {
+/* @keyframes rotate-logo {
   to {
     transform: rotateZ(360deg);
   }
-}
+} */
 
 .section_nav {
   display: flex;
@@ -316,6 +315,13 @@ img[src*="peace.svg"]:hover {
   padding-left: 0;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .single {
   display: flex;
   float: left;
@@ -382,6 +388,11 @@ img[src*="Union.png"] {
 .languages:hover {
   cursor: pointer;
 }
+
+.skills:hover {
+  cursor: pointer;
+}
+
 
 .resume:hover {
   cursor: pointer;
@@ -609,6 +620,11 @@ small {
     display: flex;
     flex-direction: row;
   }
+
+  .skills {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    }
 
   .java {
     padding-left: 15px;
@@ -894,3 +910,7 @@ small {
 }
 
 /* MODAL CODE */
+
+/* .split-em {
+  display: flex;
+} */

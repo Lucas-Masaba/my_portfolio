@@ -207,8 +207,8 @@ img[src*="peace.svg"]:hover {
 
 .language-button {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto auto;
   align-items: center;
   padding: 0;
   margin-left: 0;

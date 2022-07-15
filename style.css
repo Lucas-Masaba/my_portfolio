@@ -548,7 +548,7 @@ small {
   }
 
   .screenshot {
-    height: 600px;
+    height: 700px;
     border-radius: 8px;
   }
 
@@ -683,9 +683,6 @@ small {
     overflow-y: auto;
   }
 
-  .btn-link-description {
-
-  }
   .snapshot_popup_desktop {
     width: 100%;
     height: 100%;
@@ -698,16 +695,7 @@ small {
   }
 
   .see-source {
-    /* display: flex;
-    width: 62%;
-    margin-right: 92px;
-    height: 34px;
-    font-size: 12px;
-    padding: 4px; */
     display: flex;
-    /* width: 62%; */
-    /* margin-right: 92px; */
-    /* height: 34px; */
     font-size: 12px;
     padding: 10px;
   }
@@ -845,7 +833,6 @@ small {
     border-radius: 3%;
     padding: 2%;
     overflow-x: hidden;
-
     overflow-y: auto;
   }
 
@@ -856,12 +843,6 @@ small {
     height: 48px;
     font-size: 13px;
     padding: 15px;
-    /* display: flex;
-    margin-right: 1%;
-    height: 80%;
-    font-size: 80%;
-    padding: 4px;
-    justify-content: space-around; */
   }
 
   .live-class,
@@ -924,7 +905,6 @@ small {
 
 .project-detail-buttons {
   display: flex;
-  
   padding-bottom: 14%;
 }
 

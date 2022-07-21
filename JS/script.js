@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const openMobileMenu = document.querySelectorAll('[data-mobile-menu-target]');
   const closeMobileMenu = document.querySelectorAll('[data-close-button]');
   const mainTag = document.querySelector('.main');
-  // const projectDetails = document.querySelectorAll(".seen-project");
   const projectGrid = document.querySelector('.grid-container');
 
   const projects = [
@@ -13,15 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
       description:
         'Have you ever reached the end of a month and you realize you spent a crazy amount of money 🤯? Well, this app helps you keep track of those payments so that you can know how to budget your expenditure.',
       image: './pics/budget_app_mobile.png',
-      imageGit: './pics/detailProjectGit.png',
-      imageLive: './pics/detailProjectLive.png',
       company_name: 'Microverse',
       dev_stack: 'Back End Dev',
       year_created: '2022',
       tech: ['Ruby', 'Rails', 'SQL'],
-      tech_1: 'Ruby',
-      tech_2: 'Rails',
-      tech_3: 'SQL',
       live_demo: 'https://lucas-budget-app.herokuapp.com/',
       git_source: 'https://github.com/Lucas-Masaba/budget_app',
     },
@@ -32,15 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
       description:
         'This is a hotel booking website where you can book rooms from hotels in different countries around the world through making reservations. In this project, I worked in the back-end team and was responsible for developing the API.',
       image: './pics/hotelzilla_mobile.png',
-      imageGit: './pics/detailProjectGit.png',
-      imageLive: './pics/detailProjectLive.png',
       company_name: 'Microverse',
       dev_stack: 'Full Stack Dev',
       year_created: '2022',
       tech: ['React', 'Redux', 'Ruby', 'Rails', 'SQL'],
-      tech_1: 'Ruby',
-      tech_2: 'Rails',
-      tech_3: 'SQL',
       live_demo: 'https://hotelzilla.netlify.app/',
       git_source: 'https://github.com/keroloussamy/Hotelzilla-api',
     },
@@ -51,15 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
       description:
         'with this website, one can track how covid-19 is affecting different countries around the world 🌍. You can get information on how many people have recovered, contracted the virus and died of the virus.',
       image: './pics/covid_mobile.png',
-      imageGit: './pics/detailProjectGit.png',
-      imageLive: './pics/detailProjectLive.png',
       company_name: 'Microverse',
       dev_stack: 'Front End Dev',
       year_created: '2022',
       tech: ['React', 'Redux', 'Webpack'],
-      tech_1: 'React',
-      tech_2: 'Redux',
-      tech_3: 'Webpack',
       live_demo: 'https://covid-metrics-lucas-masaba.netlify.app/',
       git_source: 'https://github.com/Lucas-Masaba/covid_metrics',
     },
@@ -70,18 +54,28 @@ document.addEventListener('DOMContentLoaded', () => {
       description:
         "Have you ever thought of going to outer space and see what is beyond earth. Imagine being able to book rockets so that you have the chance to explore the marvels of the universe 🌌, doesn't that sound cool 😎. With this web app, you can book rockets and missions so that you are able to travel to the far reaches of our galaxy.",
       image: './pics/space-mobile.png',
-      imageGit: './pics/detailProjectGit.png',
-      imageLive: './pics/detailProjectLive.png',
       company_name: 'Microverse',
       dev_stack: 'Front End Dev',
       year_created: '2022',
       tech: ['React', 'Redux', 'Webpack'],
-      tech_1: 'React',
-      tech_2: 'Redux',
-      tech_3: 'Webpack',
       live_demo: 'https://space-traveler-zaman-lucas.netlify.app/',
       git_source: 'https://github.com/Lucas-Masaba/space-travelers',
     },
+    {
+      /* Has id=3 in HTML because this is the first element in this array with index 3 */
+      name: 'Cook Book',
+      desktopImg: './pics/cookbook_desktop.png',
+      description:
+        'This application allows you to create and save your favorite recipes so you can share them with the world! You can decide to put up your public recipes for others out there as well. It was built with Ruby on Rails,',
+      image: './pics/cookbook_mobile.png',
+      company_name: 'Microverse',
+      dev_stack: 'Back End Dev',
+      year_created: '2022',
+      tech: ['Ruby', 'Rails', 'SQL'],
+      live_demo: 'https://space-traveler-zaman-lucas.netlify.app/',
+      git_source: 'https://github.com/Lucas-Masaba/space-travelers',
+    },
+
   ];
 
   function openMenu(mobileMenu, mainTag) {
@@ -112,7 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   projectGrid.innerHTML = projects
-    .map((project, index) => `
+    .map(
+      (project, index) => `
     <div class="card">
     <div class=${
   index % 2 === 0 ? 'seperate_container' : 'seperate_container_y'
@@ -156,11 +151,12 @@ document.addEventListener('DOMContentLoaded', () => {
           ${project.description}
         </p>
         <ul class="language-button ordinary-language-button">
-        ${
-  project.tech
-    .map((singleTech) => `
+        ${project.tech
+    .map(
+      (singleTech) => `
           <li><button type="button" class="l-button">${singleTech}</button></li>
-          `)
+          `,
+    )
     .join('')}
         </ul>
         <button type="button" id="${index}" class="seen-project">
@@ -170,7 +166,8 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   
-    `)
+    `,
+    )
     .join('');
 
   const projectDetails = document.querySelectorAll('.seen-project');
@@ -211,7 +208,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img class="dot" src="./pics/dot.png" alt="This a dot image" />
               </li>
               <li>
-                <p class="back-end-dev year-created">${projects[idModal].year_created}</p>
+                <p class="back-end-dev year-created">${
+  projects[idModal].year_created
+}</p>
               </li>
             </ul>
   
@@ -228,11 +227,12 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
               <div class="desktop_project_detail-button">
                 <ul class="pop-language-button language-button">
-                  ${
-  projects[index].tech
-    .map((singleTech) => `
+                  ${projects[index].tech
+    .map(
+      (singleTech) => `
                   <li><button type="button" class="l-button">${singleTech}</button></li>
-                  `)
+                  `,
+    )
     .join('')}
                 </ul>
                 <div class="project-detail-buttons">
@@ -240,19 +240,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button type="button" class="seen-project see-source">
                       Live
                       <img
-                        src="${projects[idModal].imageLive}"
+                        src="./pics/detailProjectLive.png"
                         class="see-source-img arrow_circle"
-                        alt="a buttton linking to the live version of ${projects[idModal].name}"
+                        alt="a buttton linking to the live version of ${
+  projects[idModal].name
+}"
                       />
                     </button>
                   </a>
-                  <a href="${projects[idModal].git_source}" class="source-class">
+                  <a href="${
+  projects[idModal].git_source
+}" class="source-class">
                     <button type="button" class="seen-project see-source">
                       Source
                       <img
-                        src="${projects[idModal].imageGit}"
+                        src="./pics/detailProjectGit.png"
                         class="see-source-img github"
-                        alt="A button linking to the GitHub repo of ${projects[idModal].name}"
+                        alt="A button linking to the GitHub repo of ${
+  projects[idModal].name
+}"
                       />
                     </button>
                   </a>
@@ -276,7 +282,9 @@ document.addEventListener('DOMContentLoaded', () => {
           const desktopPopUp = document.querySelector(`.popup-image-${index}`);
           desktopPopUp.style.content = `url(${projects[idModal].desktopImg})`;
         } else {
-          const desktopPopUp = document.querySelector('.snapshot_popup_desktop');
+          const desktopPopUp = document.querySelector(
+            '.snapshot_popup_desktop',
+          );
           desktopPopUp.style.content = `url(${projects[idModal].image})`;
         }
       }
@@ -286,37 +294,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Initial check
       handleTabletChange(mediaQuery);
-
-      // const h3Test = modalWindow.querySelector("h3");
-      // const paragraph = modalWindow.querySelector(".work-description p");
-      // const imageNode = modalWindow.querySelector(".work-img img");
-      // const githubButton = modalWindow.querySelector(".github");
-      // const arrowCircleButton = modalWindow.querySelector(".arrow_circle");
-      // const company = modalWindow.querySelector(".canopy");
-      // const stack = modalWindow.querySelector(".back-end-dev");
-      // const year = modalWindow.querySelector(".year-created");
-      // const live = modalWindow.querySelector(".live-class");
-      // const source = modalWindow.querySelector(".source-class");
-
-      // h3Test.innerHTML = projects[idModal].name;
-      // paragraph.innerHTML = projects[idModal].description;
-      // imageNode.src = projects[idModal].image;
-      // githubButton.src = projects[idModal].imageGit;
-      // arrowCircleButton.src = projects[idModal].imageLive;
-      // company.innerHTML = projects[idModal].company_name;
-      // stack.innerHTML = projects[idModal].dev_stack;
-      // year.innerHTML = projects[idModal].year_created;
-      // live.href = projects[idModal].live_demo;
-      // source.href = projects[idModal].git_source;
-
-      // const techUL = document.querySelector(".pop-language-button");
-      // techUL.innerHTML = projects[index].tech
-      //   .map((singleTech) => {
-      //     return `
-      // <li><button type="button" class="l-button">${singleTech}</button></li>
-      // `;
-      //   })
-      //   .join("");
 
       const closeModalMobile = modalWindow.querySelector('[data-close-button]');
 

@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const projects = [
     {
-      /* Has id=0 in HTML because this is the first element in this array with index 0 */
       name: 'Budget App',
       desktopImg: './pics/budget_app_desktop.png',
       description:
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
       git_source: 'https://github.com/Lucas-Masaba/budget_app',
     },
     {
-      /* Has id=1 in HTML because this is the first element in this array with index 1 */
       name: 'Hotelzilla',
       desktopImg: './pics/hotelzilla_desktop.png',
       description:
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
       git_source: 'https://github.com/keroloussamy/Hotelzilla-api',
     },
     {
-      /* Has id=2 in HTML because this is the first element in this array with index 2 */
       name: 'Covid Tracker',
       desktopImg: './pics/covid_desktop.png',
       description:
@@ -48,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
       git_source: 'https://github.com/Lucas-Masaba/covid_metrics',
     },
     {
-      /* Has id=3 in HTML because this is the first element in this array with index 3 */
       name: 'Space Travelers Hub',
       desktopImg: './pics/space.png',
       description:
@@ -62,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
       git_source: 'https://github.com/Lucas-Masaba/space-travelers',
     },
     {
-      /* Has id=3 in HTML because this is the first element in this array with index 3 */
       name: 'Cook Book',
       desktopImg: './pics/cookbook_desktop.png',
       description:
@@ -74,6 +69,20 @@ document.addEventListener('DOMContentLoaded', () => {
       tech: ['Ruby', 'Rails', 'SQL'],
       live_demo: 'https://space-traveler-zaman-lucas.netlify.app/',
       git_source: 'https://github.com/Lucas-Masaba/space-travelers',
+    },
+
+    {
+      name: 'Pokepedia',
+      desktopImg: './pics/pokepedia_desktop.png',
+      description:
+        'Get to know our pokemon. Each pokemon is categorised by type such as water, electric, fire and so on. Click on a pokemon of your choice to get their stats. Its pretty fun.',
+      image: './pics/pokepedia_mobile.png',
+      company_name: 'Side Project',
+      dev_stack: 'Front End',
+      year_created: '2022',
+      tech: ['React', 'Tailwind', 'Redux'],
+      live_demo: 'https://lucas-pokepedia.netlify.app/',
+      git_source: 'https://github.com/Lucas-Masaba/pokepedia',
     },
 
   ];

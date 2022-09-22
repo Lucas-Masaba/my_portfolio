@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
   projectGrid.innerHTML = projects
     .map(
       (project, index) => `
-    <div class="card">
+    <div class="card ${index % 2 === 0 ? 'reveal fade-left' : 'reveal fade-right'}">
     <div class=${
   index % 2 === 0 ? 'seperate_container' : 'seperate_container_y'
 }>
@@ -388,3 +388,26 @@ document.addEventListener('DOMContentLoaded', () => {
   emailForm.onchange = handleChange;
   commentForm.onchange = handleChange;
 });
+
+/** Scroll Animation */
+
+const noScroll = document.querySelectorAll(".no-scroll")
+
+const reveal = () => {
+  let reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active-scroll");
+    } else {
+      reveals[i].classList.remove("active-scroll");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+noScroll.addEventListener("DOMContentLoaded", reveal());

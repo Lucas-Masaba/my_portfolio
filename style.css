@@ -919,8 +919,65 @@ small {
   font-size: 40px;
 }
 
-/* MODAL CODE */
+/* Scroll Animation */
 
-/* .split-em {
-  display: flex;
-} */
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active-scroll {
+  opacity: 1;
+}
+.active-scroll.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active-scroll.fade-top {
+  animation: fade-top 1s ease-in;
+}
+.active-scroll.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active-scroll.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,381 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <!-- animate css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Lucas' Portfolio</title>
-  </head>
 
-  <body>
-    <div class="mobile-menu" id="mobile-menu">
-      <div class="mobile-menu-header">
-        <button type="button" data-close-button class="close-button">
-          &times;
-        </button>
-      </div>
-      <nav>
-        <a href="#begin" data-close-button class="navigate"> Portfolio </a>
-        <a href="#about-myself" data-close-button class="navigate"> About </a>
-        <a href="#contact_form" data-close-button class="navigate"> Contact </a>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Lucas' Portfolio</title>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YLLBB963BE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-YLLBB963BE');
+</script>
+
+<body>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <button type="button" data-close-button class="close-button">
+        &times;
+      </button>
     </div>
-    <div id="myList" class="project-detail"></div>
-    <main class="main">
-      <header>
-        <div class="header-nav">
-          <a href="#" class="my-logo">Lucas Masaba</a>
-          <nav class="section_nav">
-            <a class="page_links" href="#begin">Portfolio</a>
-            <a class="page_links" href="#about-myself">About</a>
-            <a class="page_links" href="#contact_form">Contact</a>
-            <button
-              type="button"
-              class="hamburger"
-              data-mobile-menu-target="#mobile-menu"
-            >
-              <img
-                class="enabled_png"
-                src="./pics/Enabled.png"
-                alt="This is a menu icon"
-              />
-            </button>
-          </nav>
-        </div>
-      </header>
-      <section class="begin" id="begin">
-        <h1 class="warm">
-          I’m Lucas <br />
-          Glad to see you!
-        </h1>
-        <p class="intro-a">
-          I’m a software developer! I can help you build a product, feature or
-          website. You can have a look at some of my work and experience. If you
-          like what you see and have a project you need coded, please don’t
-          hesitate to contact me.
-        </p>
-        <p class="connect-a">LET'S CONNECT</p>
-        <ul class="icon-a">
-          <li>
-            <a href="https://twitter.com/MasabaLuke"
-              ><img
-                class="social-icon-a"
-                src="./pics/twitter_bird.png"
-                alt="This is a twitter icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/khusiima-luke-masaba-59060a121"
-              ><img
-                class="social-icon-a"
-                src="./pics/linked_in_logo.svg"
-                alt="This is a linkedin icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@masabaluke"
-              ><img
-                class="social-icon-a"
-                src="./pics/M.svg"
-                alt="This is a medium icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://github.com/Lucas-Masaba"
-              ><img
-                class="social-icon-a"
-                src="./pics/github_cat.svg"
-                alt="This is a GitHub icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://angel.co/u/lucas_masaba"
-              ><img
-                class="social-icon-a"
-                src="./pics/peace.svg"
-                alt="This is an AngelList icon "
-            /></a>
-          </li>
-        </ul>
-      </section>
+    <nav>
+      <a href="#begin" data-close-button class="navigate"> Portfolio </a>
+      <a href="#about-myself" data-close-button class="navigate"> About </a>
+      <a href="#contact_form" data-close-button class="navigate"> Contact </a>
+    </nav>
+  </div>
+  <div id="myList" class="project-detail"></div>
+  <main class="main">
+    <header>
+      <div class="header-nav">
+        <a href="#" class="my-logo">Lucas Masaba</a>
+        <nav class="section_nav">
+          <a class="page_links" href="#begin">Portfolio</a>
+          <a class="page_links" href="#about-myself">About</a>
+          <a class="page_links" href="#contact_form">Contact</a>
+          <button type="button" class="hamburger" data-mobile-menu-target="#mobile-menu">
+            <img class="enabled_png" src="./pics/Enabled.png" alt="This is a menu icon" />
+          </button>
+        </nav>
+      </div>
+    </header>
+    <section class="begin" id="begin">
+      <h1 class="warm">
+        I’m Lucas <br />
+        Glad to see you!
+      </h1>
+      <p class="intro-a">
+        I’m a software developer! I can help you build a product, feature or
+        website. You can have a look at some of my work and experience. If you
+        like what you see and have a project you need coded, please don’t
+        hesitate to contact me.
+      </p>
+      <p class="connect-a">LET'S CONNECT</p>
+      <ul class="icon-a">
+        <li>
+          <a href="https://twitter.com/MasabaLuke"><img class="social-icon-a" src="./pics/twitter_bird.png"
+              alt="This is a twitter icon" /></a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/khusiima-luke-masaba-59060a121"><img class="social-icon-a"
+              src="./pics/linked_in_logo.svg" alt="This is a linkedin icon" /></a>
+        </li>
+        <li>
+          <a href="https://medium.com/@masabaluke"><img class="social-icon-a" src="./pics/M.svg"
+              alt="This is a medium icon" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/Lucas-Masaba"><img class="social-icon-a" src="./pics/github_cat.svg"
+              alt="This is a GitHub icon" /></a>
+        </li>
+        <li>
+          <a href="https://angel.co/u/lucas_masaba"><img class="social-icon-a" src="./pics/peace.svg"
+              alt="This is an AngelList icon " /></a>
+        </li>
+      </ul>
+    </section>
 
-      <section class="grid-container">
+    <section class="grid-container">
 
-      </section>
+    </section>
 
-      <div class="bottom_section">
-        <section id="about-myself">
-          <div class="split">
-            <div class="individual_split">
-              <h2 class="intro">About<br />Myself</h2>
-              <h2 class="hello">
-                Hello I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a job offer, project you need
-                coded, don’t hestiate to contact me.
-              </h2>
-              <h2 class="connect">LET'S CONNECT</h2>
-              <ul class="icon">
-                <li>
-                  <a href="https://github.com/Lucas-Masaba"
-                    ><img
-                      class="chirp"
-                      src="./pics/github_cat.svg"
-                      alt="This is a GitHub icon"
-                  /></a>
-                </li>
-                <li>
-                  <a
-                    href="https://linkedin.com/in/khusiima-luke-masaba-59060a121"
-                    ><img
-                      class="chirp"
-                      src="./pics/linked_in_logo.svg"
-                      alt="This is a linkedin icon"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://angel.co/u/lucas_masaba"
-                    ><img
-                      class="chirp"
-                      src="./pics/peace.svg"
-                      alt="This is an AngelList icon"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MasabaLuke"
-                    ><img
-                      class="chirp"
-                      src="./pics/twitter_bird.png"
-                      alt="This is a twitter icon"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://medium.com/@masabaluke"
-                    ><img
-                      class="chirp"
-                      src="./pics/M.svg"
-                      alt="This is a medium icon"
-                  /></a>
-                </li>
-              </ul>
-              <a
-                href="https://docs.google.com/document/d/1bJHFXPkTGDbtRoa_0O9JydPwzxsQrnvomw96mfdIa0o/edit"
-              >
-                <button type="button" class="resume">Get my resume</button>
-              </a>
+    <div class="bottom_section">
+      <section id="about-myself">
+        <div class="split">
+          <div class="individual_split">
+            <h2 class="intro">About<br />Myself</h2>
+            <h2 class="hello">
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience!
+              If you like what you see and have a job offer, project you need
+              coded, don’t hestiate to contact me.
+            </h2>
+            <h2 class="connect">LET'S CONNECT</h2>
+            <ul class="icon">
+              <li>
+                <a href="https://github.com/Lucas-Masaba"><img class="chirp" src="./pics/github_cat.svg"
+                    alt="This is a GitHub icon" /></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/khusiima-luke-masaba-59060a121"><img class="chirp"
+                    src="./pics/linked_in_logo.svg" alt="This is a linkedin icon" /></a>
+              </li>
+              <li>
+                <a href="https://angel.co/u/lucas_masaba"><img class="chirp" src="./pics/peace.svg"
+                    alt="This is an AngelList icon" /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/MasabaLuke"><img class="chirp" src="./pics/twitter_bird.png"
+                    alt="This is a twitter icon" /></a>
+              </li>
+              <li>
+                <a href="https://medium.com/@masabaluke"><img class="chirp" src="./pics/M.svg"
+                    alt="This is a medium icon" /></a>
+              </li>
+            </ul>
+            <a href="https://docs.google.com/document/d/1bJHFXPkTGDbtRoa_0O9JydPwzxsQrnvomw96mfdIa0o/edit">
+              <button type="button" class="resume">Get my resume</button>
+            </a>
+          </div>
+          <div class="individual_split">
+            <div class="options">
+              Languages
             </div>
-            <div class="individual_split">
-              <div class="options">
-                Languages
-              </div>
+            <ul class="languages">
+              <li class="individual-language">
+                <img class="single" src="./pics/js.png" alt="This is a javascript icon" />
+                <div class="java">JavaScript</div>
+              </li>
+              <li class="individual-language">
+                <img class="single" src="./pics/html.png" alt="This is a javascript icon" />
+                <div class="java">HTML</div>
+              </li>
+              <li class="individual-language">
+                <img class="single" src="./pics/html3.png" alt="This is a CSS icon" />
+                <div class="java">CSS</div>
+              </li>
+              <li class="individual-language">
+                <img class="single" src="./pics/ruby.png" alt="This is a ruby icon" />
+                <div class="java">Ruby</div>
+              </li>
+              <li class="individual-language">
+                <img width="80" class="single" src="./pics/postgres.png" alt="This is a postgres icon" />
+                <div class="java">Postgres</div>
+              </li>
+            </ul>
+            <ul class="tools">
+              <p>Frameworks</p>
               <ul class="languages">
                 <li class="individual-language">
-                  <img
-                    class="single"
-                    src="./pics/js.png"
-                    alt="This is a javascript icon"
-                  />
-                  <div class="java">JavaScript</div>
+                  <img width="100" class="single" src="./pics/rails.png" alt="This is a javascript icon" />
+                  <div class="java">Rails</div>
                 </li>
                 <li class="individual-language">
-                  <img
-                    class="single"
-                    src="./pics/html.png"
-                    alt="This is a javascript icon"
-                  />
-                  <div class="java">HTML</div>
-                </li>
-                <li class="individual-language">
-                  <img
-                    class="single"
-                    src="./pics/html3.png"
-                    alt="This is a CSS icon"
-                  />
-                  <div class="java">CSS</div>
-                </li>
-                <li class="individual-language">
-                  <img
-                    class="single"
-                    src="./pics/ruby.png"
-                    alt="This is a ruby icon"
-                  />
-                  <div class="java">Ruby</div>
-                </li>
-                <li class="individual-language">
-                  <img
-                    width="80"
-                    class="single"
-                    src="./pics/postgres.png"
-                    alt="This is a postgres icon"
-                  />
-                  <div class="java">Postgres</div>
+                  <img width="80" class="single" src="./pics/react.png" alt="This is an rails icon" />
+                  <div class="java">React</div>
                 </li>
               </ul>
-              <ul class="tools">
-                <p>Frameworks</p>
-                <ul class="languages">
-                  <li class="individual-language">
-                    <img
-                      width="100"
-                      class="single"
-                      src="./pics/rails.png"
-                      alt="This is a javascript icon"
-                    />
-                    <div class="java">Rails</div>
-                  </li>
-                  <li class="individual-language">
-                    <img
-                      width="80"
-                      class="single"
-                      src="./pics/react.png"
-                      alt="This is an rails icon"
-                    />
-                    <div class="java">React</div>
-                  </li>
-                </ul>
-                <p>Skills</p>
-                <ul class="skills">
-                  <li class="individual-language">
-                    <img
-                      width="70"
-                      class="single"
-                      src="./pics/redux"
-                      alt="This is a redux icon"
-                    />
-                    <div class="java">Redux</div>
-                  </li>
-                  <li class="individual-language">
-                    <img
-                      width="60"
-                      class="single"
-                      src="./pics/webpack.png"
-                      alt="This is a webpack icon"
-                    />
-                    <div class="java">Webpack</div>
-                  </li>
-                  <li class="individual-language">
-                    <img
-                      width="70"
-                      class="single"
-                      src="./pics/babel.svg"
-                      alt="This is a babel icon"
-                    />
-                    <div class="java">Babel</div>
-                  </li>
-                  <li class="individual-language">
-                    <img
-                      class="single"
-                      src="./pics/bootstrap.png"
-                      alt="This is a bootstrap icon"
-                    />
-                    <div class="java">Bootstrap</div>
-                  </li>
-                  <li class="individual-language">
-                    <img
-                      width="90"
-                      class="single"
-                      src="./pics/sass.png"
-                      alt="This is a sass icon"
-                    />
-                    <div class="java">Sass</div>
-                  </li>
-                  <li class="individual-language">
-                    <img
-                      width="60"
-                      class="single"
-                      src="./pics/heroku.png"
-                      alt="This is a heroku icon"
-                    />
-                    <div class="java">Heroku</div>
-                  </li>
-                  <li class="individual-language">
-                    <img
-                      width="80"
-                      class="single"
-                      src="./pics/netlify.png"
-                      alt="This is a netlify icon"
-                    />
-                    <div class="java">Netlify</div>
-                  </li>
-                  <li class="individual-language">
-                    <img
-                      width="80"
-                      class="single"
-                      src="./pics/figma.png"
-                      alt="This is a figma icon"
-                    />
-                    <div class="java">Figma</div>
-                  </li>
-                </ul>
+              <p>Skills</p>
+              <ul class="skills">
+                <li class="individual-language">
+                  <img width="70" class="single" src="./pics/redux" alt="This is a redux icon" />
+                  <div class="java">Redux</div>
+                </li>
+                <li class="individual-language">
+                  <img width="60" class="single" src="./pics/webpack.png" alt="This is a webpack icon" />
+                  <div class="java">Webpack</div>
+                </li>
+                <li class="individual-language">
+                  <img width="70" class="single" src="./pics/babel.svg" alt="This is a babel icon" />
+                  <div class="java">Babel</div>
+                </li>
+                <li class="individual-language">
+                  <img class="single" src="./pics/bootstrap.png" alt="This is a bootstrap icon" />
+                  <div class="java">Bootstrap</div>
+                </li>
+                <li class="individual-language">
+                  <img width="90" class="single" src="./pics/sass.png" alt="This is a sass icon" />
+                  <div class="java">Sass</div>
+                </li>
+                <li class="individual-language">
+                  <img width="60" class="single" src="./pics/heroku.png" alt="This is a heroku icon" />
+                  <div class="java">Heroku</div>
+                </li>
+                <li class="individual-language">
+                  <img width="80" class="single" src="./pics/netlify.png" alt="This is a netlify icon" />
+                  <div class="java">Netlify</div>
+                </li>
+                <li class="individual-language">
+                  <img width="80" class="single" src="./pics/figma.png" alt="This is a figma icon" />
+                  <div class="java">Figma</div>
+                </li>
               </ul>
-            </div>
+            </ul>
           </div>
-        </section>
-        <section id="contact_form">
-          <h2 class="contact_heading">Contact me</h2>
-          <div class="contact_form_section">
-            <p class="contact_text">
-              If you have a job offer, an application you are interested in
-              developing, a feature that you need built or a project that needs
-              coding. I’d love to help with it
-            </p>
-            <form
-              id="myForm"
-              action="https://formspree.io/f/xzbokpqz"
-              method="POST"
-            >
-              <input
-                onchange="handleChange()"
-                class="form_input"
-                type="text"
-                name="fullname"
-                id="fullname"
-                maxlength="30"
-                placeholder="Enter your name here"
-                required
-              />
-              <input
-                onchange="handleChange()"
-                class="form_input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email here"
-                required
-              />
-              <textarea
-                onchange="handleChange()"
-                class="form_input"
-                name="message-input"
-                id="message-input"
-                cols="30"
-                rows="7"
-                maxlength="500"
-                placeholder="Write your message here"
-                required
-              ></textarea>
-              <small></small>
-              <button type="submit" onclick="myFunction()" class="submission">
-                Get In Touch
-              </button>
-            </form>
-          </div>
-        </section>
-      </div>
-    </main>
-    <div class="project-details-modal project-1 animate__animated">
+        </div>
+      </section>
+      <section id="contact_form">
+        <h2 class="contact_heading">Contact me</h2>
+        <div class="contact_form_section">
+          <p class="contact_text">
+            If you have a job offer, an application you are interested in
+            developing, a feature that you need built or a project that needs
+            coding. I’d love to help with it
+          </p>
+          <form id="myForm" action="https://formspree.io/f/xzbokpqz" method="POST">
+            <input onchange="handleChange()" class="form_input" type="text" name="fullname" id="fullname" maxlength="30"
+              placeholder="Enter your name here" required />
+            <input onchange="handleChange()" class="form_input" type="email" name="email" id="email"
+              placeholder="Enter your email here" required />
+            <textarea onchange="handleChange()" class="form_input" name="message-input" id="message-input" cols="30"
+              rows="7" maxlength="500" placeholder="Write your message here" required></textarea>
+            <small></small>
+            <button type="submit" onclick="myFunction()" class="submission">
+              Get In Touch
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
+  </main>
+  <div class="project-details-modal project-1 animate__animated">
+  </div>
 
-    <script defer src="./JS/script.js"></script>
-  </body>
+  <script defer src="./JS/script.js"></script>
+</body>
+
 </html>

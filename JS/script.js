@@ -118,9 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
     .map(
       (project, index) => `
     <div class="card ${index % 2 === 0 ? 'reveal fade-left' : 'reveal fade-right'}">
-    <div class=${
-  index % 2 === 0 ? 'seperate_container' : 'seperate_container_y'
-}>
+    <div class=${index % 2 === 0 ? 'seperate_container' : 'seperate_container_y'
+        }>
       <div class="screenshot_container">
         <img
           class="screenshot"
@@ -161,12 +160,12 @@ document.addEventListener('DOMContentLoaded', () => {
         </p>
         <ul class="language-button ordinary-language-button">
         ${project.tech
-    .map(
-      (singleTech) => `
+          .map(
+            (singleTech) => `
           <li><button type="button" class="l-button">${singleTech}</button></li>
           `,
-    )
-    .join('')}
+          )
+          .join('')}
         </ul>
         <button type="button" id="${index}" class="seen-project">
           See Project
@@ -217,9 +216,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img class="dot" src="./pics/dot.png" alt="This a dot image" />
               </li>
               <li>
-                <p class="back-end-dev year-created">${
-  projects[idModal].year_created
-}</p>
+                <p class="back-end-dev year-created">${projects[idModal].year_created
+        }</p>
               </li>
             </ul>
   
@@ -237,12 +235,12 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="desktop_project_detail-button">
                 <ul class="pop-language-button language-button">
                   ${projects[index].tech
-    .map(
-      (singleTech) => `
+          .map(
+            (singleTech) => `
                   <li><button type="button" class="l-button">${singleTech}</button></li>
                   `,
-    )
-    .join('')}
+          )
+          .join('')}
                 </ul>
                 <div class="project-detail-buttons">
                   <a href="${projects[idModal].live_demo}" class="live-class">
@@ -251,23 +249,20 @@ document.addEventListener('DOMContentLoaded', () => {
                       <img
                         src="./pics/detailProjectLive.png"
                         class="see-source-img arrow_circle"
-                        alt="a buttton linking to the live version of ${
-  projects[idModal].name
-}"
+                        alt="a buttton linking to the live version of ${projects[idModal].name
+        }"
                       />
                     </button>
                   </a>
-                  <a href="${
-  projects[idModal].git_source
-}" class="source-class">
+                  <a href="${projects[idModal].git_source
+        }" class="source-class">
                     <button type="button" class="seen-project see-source">
                       Source
                       <img
                         src="./pics/detailProjectGit.png"
                         class="see-source-img github"
-                        alt="A button linking to the GitHub repo of ${
-  projects[idModal].name
-}"
+                        alt="A button linking to the GitHub repo of ${projects[idModal].name
+        }"
                       />
                     </button>
                   </a>
@@ -358,36 +353,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* local storage */
-
-  /* Javascript object with all data to be stored locally  */
-  const fullNameForm = document.getElementById('fullname');
-  const emailForm = document.getElementById('email');
-  const commentForm = document.getElementById('message-input');
-
-  function handleChange() {
-    const formData = {
-      fullName: fullNameForm.value,
-      email: emailForm.value,
-      comment: commentForm.value,
-    };
-    localStorage.setItem('form', JSON.stringify(formData));
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const getFormValue = localStorage.getItem('form');
-    if (getFormValue) {
-      const formObject = JSON.parse(getFormValue);
-      fullNameForm.value = formObject.fullName;
-      emailForm.value = formObject.email;
-      commentForm.value = formObject.comment;
-    }
-  });
-
-  fullNameForm.onchange = handleChange;
-  emailForm.onchange = handleChange;
-  commentForm.onchange = handleChange;
 });
+/* local storage */
+
+/* Javascript object with all data to be stored locally  */
+const fullNameForm = document.getElementById('fullname');
+const emailForm = document.getElementById('email');
+const commentForm = document.getElementById('message-input');
+
+function handleChange() {
+  const formData = {
+    fullName: fullNameForm.value,
+    email: emailForm.value,
+    comment: commentForm.value,
+  };
+  localStorage.setItem('form', JSON.stringify(formData));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const getFormValue = localStorage.getItem('form');
+  if (getFormValue) {
+    const formObject = JSON.parse(getFormValue);
+    fullNameForm.value = formObject.fullName;
+    emailForm.value = formObject.email;
+    commentForm.value = formObject.comment;
+  }
+});
+
+fullNameForm.onchange = handleChange;
+emailForm.onchange = handleChange;
+commentForm.onchange = handleChange;
 
 /** Scroll Animation */
 

@@ -6,19 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const projects = [
     {
-      name: 'Budget App',
-      desktopImg: './pics/budget_app_desktop.png',
-      description:
-        'Have you ever reached the end of a month and you realize you spent a crazy amount of money 🤯? Well, this app helps you keep track of those payments so that you can know how to budget your expenditure.',
-      image: './pics/budget_app_mobile.png',
-      company_name: 'Microverse',
-      dev_stack: 'Back End Dev',
-      year_created: '2022',
-      tech: ['Ruby', 'Rails', 'SQL'],
-      live_demo: 'https://lucas-budget-app.herokuapp.com/',
-      git_source: 'https://github.com/Lucas-Masaba/budget_app',
-    },
-    {
       name: 'Hotelzilla',
       desktopImg: './pics/hotelzilla_desktop.png',
       description:
@@ -32,30 +19,56 @@ document.addEventListener('DOMContentLoaded', () => {
       git_source: 'https://github.com/keroloussamy/Hotelzilla-api',
     },
     {
+      name: 'MpakuGig',
+      desktopImg: './pics/mpakugig-desktop.png',
+      description:
+        'Note: Still under development. Your Shortcut To Streamlined Workflows And Systems Stop juggling tasks and free-up time. Get the tools you need to simplify your freelance business and reach new heights',
+      image: './pics/mpakugig-desktop.png',
+      company_name: 'MpakuGig',
+      dev_stack: 'FullStack',
+      year_created: '2024',
+      tech: ['NextJS', 'NestJS'],
+      live_demo: 'https://mpakugig.com',
+      git_source: 'https://github.com/MpaKuGig/website',
+    },
+    {
+      name: 'Budget App',
+      desktopImg: './pics/budget_app_desktop.png',
+      description:
+        'Have you ever reached the end of a month and you realize you spent a crazy amount of money 🤯? Well, this app helps you keep track of those payments so that you can know how to budget your expenditure.',
+      image: './pics/budget_app_mobile.png',
+      company_name: 'Microverse',
+      dev_stack: 'BackEnd',
+      year_created: '2022',
+      tech: ['Ruby', 'Rails', 'SQL'],
+      live_demo: 'https://lucas-budget-app.herokuapp.com/',
+      git_source: 'https://github.com/Lucas-Masaba/budget_app',
+    },
+    {
+      name: 'Hospital Management System',
+      desktopImg: './pics/hospital.png',
+      description:
+        'Developed a hospital mangement system API that allows the hospital to manage patients, doctors, and appointments. The API was built using Ruby on Rails',
+      image: './pics/hospital.png',
+      company_name: 'Microverse',
+      dev_stack: 'BackEnd',
+      year_created: '2022',
+      tech: ['Ruby', 'Rails', 'Postgres'],
+      live_demo: 'https://github.com/Lucas-Masaba/hospital_HMIS',
+      git_source: 'https://github.com/Lucas-Masaba/hospital_HMIS',
+    },
+    {
       name: 'Covid Tracker',
       desktopImg: './pics/covid_desktop.png',
       description:
         'with this website, one can track how covid-19 is affecting different countries around the world 🌍. You can get information on how many people have recovered, contracted the virus and died of the virus.',
       image: './pics/covid_mobile.png',
       company_name: 'Microverse',
-      dev_stack: 'Front End Dev',
+      dev_stack: 'FrontEnd',
       year_created: '2022',
       tech: ['React', 'Redux', 'Webpack'],
       live_demo: 'https://covid-metrics-lucas-masaba.netlify.app/',
       git_source: 'https://github.com/Lucas-Masaba/covid_metrics',
-    },
-    {
-      name: 'Space Travelers Hub',
-      desktopImg: './pics/space.png',
-      description:
-        "Have you ever thought of going to outer space and see what is beyond earth. Imagine being able to book rockets so that you have the chance to explore the marvels of the universe 🌌, doesn't that sound cool 😎. With this web app, you can book rockets and missions so that you are able to travel to the far reaches of our galaxy.",
-      image: './pics/space-mobile.png',
-      company_name: 'Microverse',
-      dev_stack: 'Front End Dev',
-      year_created: '2022',
-      tech: ['React', 'Redux', 'Webpack'],
-      live_demo: 'https://space-traveler-zaman-lucas.netlify.app/',
-      git_source: 'https://github.com/Lucas-Masaba/space-travelers',
     },
     {
       name: 'Cook Book',
@@ -64,20 +77,19 @@ document.addEventListener('DOMContentLoaded', () => {
         'This application allows you to create and save your favorite recipes so you can share them with the world! You can decide to put up your public recipes for others out there as well. It was built with Ruby on Rails,',
       image: './pics/cookbook_mobile.png',
       company_name: 'Microverse',
-      dev_stack: 'Back End Dev',
+      dev_stack: 'BackEnd',
       year_created: '2022',
       tech: ['Ruby', 'Rails', 'SQL'],
       live_demo: 'https://space-traveler-zaman-lucas.netlify.app/',
       git_source: 'https://github.com/Lucas-Masaba/space-travelers',
     },
-
     {
       name: 'Pokepedia',
       desktopImg: './pics/pokepedia_desktop.png',
       description:
         'Get to know our pokemon. Each pokemon is categorised by type such as water, electric, fire and so on. Click on a pokemon of your choice to get their stats. Its pretty fun.',
       image: './pics/pokepedia_mobile.png',
-      company_name: 'Side Project',
+      company_name: 'Personal',
       dev_stack: 'Front End',
       year_created: '2022',
       tech: ['React', 'Tailwind', 'Redux'],
@@ -119,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
       (project, index) => `
     <div class="card ${index % 2 === 0 ? 'reveal fade-left' : 'reveal fade-right'}">
     <div class=${index % 2 === 0 ? 'seperate_container' : 'seperate_container_y'
-        }>
+}>
       <div class="screenshot_container">
         <img
           class="screenshot"
@@ -160,12 +172,12 @@ document.addEventListener('DOMContentLoaded', () => {
         </p>
         <ul class="language-button ordinary-language-button">
         ${project.tech
-          .map(
-            (singleTech) => `
+    .map(
+      (singleTech) => `
           <li><button type="button" class="l-button">${singleTech}</button></li>
           `,
-          )
-          .join('')}
+    )
+    .join('')}
         </ul>
         <button type="button" id="${index}" class="seen-project">
           See Project
@@ -217,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </li>
               <li>
                 <p class="back-end-dev year-created">${projects[idModal].year_created
-        }</p>
+}</p>
               </li>
             </ul>
   
@@ -235,12 +247,12 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="desktop_project_detail-button">
                 <ul class="pop-language-button language-button">
                   ${projects[index].tech
-          .map(
-            (singleTech) => `
+    .map(
+      (singleTech) => `
                   <li><button type="button" class="l-button">${singleTech}</button></li>
                   `,
-          )
-          .join('')}
+    )
+    .join('')}
                 </ul>
                 <div class="project-detail-buttons">
                   <a href="${projects[idModal].live_demo}" class="live-class">
@@ -250,19 +262,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         src="./pics/detailProjectLive.png"
                         class="see-source-img arrow_circle"
                         alt="a buttton linking to the live version of ${projects[idModal].name
-        }"
+}"
                       />
                     </button>
                   </a>
                   <a href="${projects[idModal].git_source
-        }" class="source-class">
+}" class="source-class">
                     <button type="button" class="seen-project see-source">
                       Source
                       <img
                         src="./pics/detailProjectGit.png"
                         class="see-source-img github"
                         alt="A button linking to the GitHub repo of ${projects[idModal].name
-        }"
+}"
                       />
                     </button>
                   </a>
@@ -307,7 +319,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-
 });
 
 function showMessage(input, message, type) {
@@ -387,23 +398,23 @@ commentForm.onchange = handleChange;
 
 /** Scroll Animation */
 
-const noScroll = document.querySelectorAll(".no-scroll")
+const noScroll = document.querySelectorAll('.no-scroll');
 
 const reveal = () => {
-  let reveals = document.querySelectorAll(".reveal");
+  const reveals = document.querySelectorAll('.reveal');
 
-  for (let i = 0; i < reveals.length; i++) {
-    let windowHeight = window.innerHeight;
-    let elementTop = reveals[i].getBoundingClientRect().top;
-    let elementVisible = 150;
+  for (let i = 0; i < reveals.length; i += 1) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active-scroll");
+      reveals[i].classList.add('active-scroll');
     } else {
-      reveals[i].classList.remove("active-scroll");
+      reveals[i].classList.remove('active-scroll');
     }
   }
-}
+};
 
-window.addEventListener("scroll", reveal);
-noScroll.addEventListener("DOMContentLoaded", reveal());
+window.addEventListener('scroll', reveal);
+noScroll.addEventListener('DOMContentLoaded', reveal());

@@ -32,6 +32,32 @@ document.addEventListener('DOMContentLoaded', () => {
       git_source: 'https://github.com/MpaKuGig/website',
     },
     {
+      name: 'Pokepedia',
+      desktopImg: './pics/pokepedia_desktop.png',
+      description:
+        'Get to know our pokemon. Each pokemon is categorised by type such as water, electric, fire and so on. Click on a pokemon of your choice to get their stats. Its pretty fun.',
+      image: './pics/pokepedia_mobile.png',
+      company_name: 'Personal',
+      dev_stack: 'Front End',
+      year_created: '2022',
+      tech: ['React', 'Tailwind', 'Redux'],
+      live_demo: 'https://lucas-pokepedia.netlify.app/',
+      git_source: 'https://github.com/Lucas-Masaba/pokepedia',
+    },
+    {
+      name: 'Covid Tracker',
+      desktopImg: './pics/covid_desktop.png',
+      description:
+        'with this website, one can track how covid-19 is affecting different countries around the world 🌍. You can get information on how many people have recovered, contracted the virus and died of the virus.',
+      image: './pics/covid_mobile.png',
+      company_name: 'Microverse',
+      dev_stack: 'FrontEnd',
+      year_created: '2022',
+      tech: ['React', 'Redux', 'Webpack'],
+      live_demo: 'https://covid-metrics-lucas-masaba.netlify.app/',
+      git_source: 'https://github.com/Lucas-Masaba/covid_metrics',
+    },
+    {
       name: 'Budget App',
       desktopImg: './pics/budget_app_desktop.png',
       description:
@@ -58,19 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
       git_source: 'https://github.com/Lucas-Masaba/hospital_HMIS',
     },
     {
-      name: 'Covid Tracker',
-      desktopImg: './pics/covid_desktop.png',
-      description:
-        'with this website, one can track how covid-19 is affecting different countries around the world 🌍. You can get information on how many people have recovered, contracted the virus and died of the virus.',
-      image: './pics/covid_mobile.png',
-      company_name: 'Microverse',
-      dev_stack: 'FrontEnd',
-      year_created: '2022',
-      tech: ['React', 'Redux', 'Webpack'],
-      live_demo: 'https://covid-metrics-lucas-masaba.netlify.app/',
-      git_source: 'https://github.com/Lucas-Masaba/covid_metrics',
-    },
-    {
       name: 'Cook Book',
       desktopImg: './pics/cookbook_desktop.png',
       description:
@@ -83,20 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
       live_demo: 'https://space-traveler-zaman-lucas.netlify.app/',
       git_source: 'https://github.com/Lucas-Masaba/space-travelers',
     },
-    {
-      name: 'Pokepedia',
-      desktopImg: './pics/pokepedia_desktop.png',
-      description:
-        'Get to know our pokemon. Each pokemon is categorised by type such as water, electric, fire and so on. Click on a pokemon of your choice to get their stats. Its pretty fun.',
-      image: './pics/pokepedia_mobile.png',
-      company_name: 'Personal',
-      dev_stack: 'Front End',
-      year_created: '2022',
-      tech: ['React', 'Tailwind', 'Redux'],
-      live_demo: 'https://lucas-pokepedia.netlify.app/',
-      git_source: 'https://github.com/Lucas-Masaba/pokepedia',
-    },
-
   ];
 
   function openMenu(mobileMenu, mainTag) {
